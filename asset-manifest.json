@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sihlecodes/static/css/main.073c9b0a.css",
-    "main.js": "/sihlecodes/static/js/main.a1efeeee.js",
+    "main.css": "/sihlecodes/static/css/main.2870193b.css",
+    "main.js": "/sihlecodes/static/js/main.b8023197.js",
     "static/js/787.1ed0c42c.chunk.js": "/sihlecodes/static/js/787.1ed0c42c.chunk.js",
     "static/media/logo.svg": "/sihlecodes/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/sihlecodes/index.html",
-    "main.073c9b0a.css.map": "/sihlecodes/static/css/main.073c9b0a.css.map",
-    "main.a1efeeee.js.map": "/sihlecodes/static/js/main.a1efeeee.js.map",
+    "main.2870193b.css.map": "/sihlecodes/static/css/main.2870193b.css.map",
+    "main.b8023197.js.map": "/sihlecodes/static/js/main.b8023197.js.map",
     "787.1ed0c42c.chunk.js.map": "/sihlecodes/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.a1efeeee.js"
+    "static/css/main.2870193b.css",
+    "static/js/main.b8023197.js"
   ]
 }
