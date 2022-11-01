@@ -18,6 +18,7 @@
   text-decoration: none;
   font-weight: 500;
   color: var(--foreground-color);
+  display: none;
 }
 
 .App-nav-item-text:not(:last-child) {
@@ -29,19 +30,24 @@
 }
 
 .App-big-text {
-  font-size: 40vh;
+  font-size: 8rem;
   font-weight: 900;
 }
 
 .App-greeting-text {
-  font-size: xx-large;
+  font-size: 1.2rem;
   flex: 1;
-  align-content: center;
+  align-content: flex-end;
+  text-align: left;
+  /* color:rgb(147, 113, 188); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 70%);
 }
 
 .App-experience-text {
   text-transform: uppercase;
   flex: 1;
+  display: none;
 }
 
 .bigg {
@@ -58,13 +64,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 100vh;
+  /* background-color: #282c34; */
+  background-image: url(assets/me.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
-  padding: 1rem;
+  text-align: bottom;
+  /* padding: 1rem; */
 }
 
 .App-nav {
@@ -74,7 +84,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .App-icons {

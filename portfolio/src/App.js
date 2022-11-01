@@ -1,5 +1,6 @@
 import itchIcon from './assets/itch-io.svg';
 import githubIcon from './assets/itch-io.svg';
+import selfie from './assets/me.jpg';
 import './App.css';
 
 function App() {
