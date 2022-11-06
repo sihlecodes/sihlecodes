@@ -2,27 +2,15 @@
   text-align: center;
 
   --foreground-color: rgb(181, 128, 255);
+  --ribbon-background-color: 40, 42, 48
 }
-
 
 .App-icon {
-  color:red;
   width: 50px;
-  /* display: inline; */
-}
-
-.App-nav-item-text {
-  display: inline;
-  padding: 0 0.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--foreground-color);
-  display: none;
-}
-
-.App-nav-item-text:not(:last-child) {
-  border-right: 1px solid;
+  background-color: rgb(var(--ribbon-background-color));
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
 }
 
 .App-name-text {
@@ -32,78 +20,48 @@
 .App-big-text {
   font-size: 8rem;
   font-weight: 900;
+  line-height: 7.5rem;
 }
 
 .App-greeting-text {
   font-size: 1.2rem;
   flex: 1;
-  align-content: flex-end;
-  text-align: left;
-  /* color:rgb(147, 113, 188); */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 70%);
+  text-align: center;
+  background-image: -webkit-linear-gradient(left,
+      rgba(var(--ribbon-background-color), 0.15) 0%,
+      rgba(var(--ribbon-background-color), 0.25) 20%,
+      rgba(var(--ribbon-background-color), 1.00) 50%,
+      rgba(var(--ribbon-background-color), 0.25) 80%,
+      rgba(var(--ribbon-background-color), 0.15) 100%);
+
+  padding: 20px;
 }
 
 .App-experience-text {
-  text-transform: uppercase;
   flex: 1;
-  display: none;
-}
-
-.bigg {
-  color: var(--foreground-color);
-}
-
-.App-uppercase-text {
-  
-}
-
-.App-logo {
-  color: blue;
-  display: none;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0px;
+  right: 0px;
 }
 
 .App-header {
-  /* background-color: #282c34; */
-  background-image: url(assets/me.jpg);
-  background-position: center;
+  background-image: url(assets/background.jpg);
+  background-position: 0px;
   background-size: cover;
   height: 60vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 1vmin);
   color: white;
-  text-align: bottom;
-  /* padding: 1rem; */
-}
-
-.App-nav {
 }
 
 .App-header-content {
   flex: 1;
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
+  align-items: flex-end;
 }
 
-.App-icons {
-  /* display: none; */
-  /* flex: 0.2; */
-}
-
-.App-sidebar {
-  position: fixed;
-  /* height: 100vh; */
-  font-size: calc(10px + 0.6vh);
-  /* width: 30vw; */
-  max-width: 200px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  padding: 20px;
-  border-radius: 0.8vmin;
-  margin-left: 10px;
-  background-color: #6495ed;
-  display: none;
+.App-content {
+  padding: 0 5vw;
 }
