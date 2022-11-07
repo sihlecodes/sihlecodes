@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -8,18 +8,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const hide = (e) => e.style.display = 'none';
 
-function WrappedApp() {
-  useEffect(() => {
-    hide(document.querySelector('.loader'));
-  }, []);
-
-  return <App/>;
-}
+window.addEventListener('load', () => hide(document.querySelector('.loader')));
 
 root.render(
   <React.StrictMode>
     <div className="loader"></div>
-    <WrappedApp/>
+    <App />
   </React.StrictMode>
 );
 
