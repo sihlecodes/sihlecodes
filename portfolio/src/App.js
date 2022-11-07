@@ -2,16 +2,18 @@ import itchIcon from './assets/itch-io.svg';
 import githubIcon from './assets/itch-io.svg';
 import './App.css';
 
-function App() {
-  const yearOfStart = 2015
-  var yearsOfCodingExpirience = new Date().getFullYear() - (yearOfStart + 1);
+function getYearsOfExpirience() {
+  const STARTING_YEAR = 2015
+  return new Date().getFullYear() - (STARTING_YEAR + 1);
+}
 
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-content">
           <div className="App-experience-text" >
-            <div className="App-big-text">{yearsOfCodingExpirience}+</div>
+            <div className="App-big-text">{getYearsOfExpirience()}+</div>
             <div className="App-medium-text">years</div>
             <div>of coding</div>
           </div>
@@ -22,7 +24,6 @@ function App() {
           </div>
         </div>
       </header>
-
 
       <div className="App-content">
         <h2>About</h2>

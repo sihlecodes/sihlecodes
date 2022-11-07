@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const hide = (e) => e.style.display = 'none';
+
+function WrappedApp() {
+  useEffect(() => {
+    hide(document.querySelector('.loader'));
+  }, []);
+
+  return <App/>;
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="loader"></div>
+    <WrappedApp/>
   </React.StrictMode>
 );
 
