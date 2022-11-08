@@ -1,5 +1,5 @@
 import itchIcon from './assets/itch-io.svg';
-import githubIcon from './assets/itch-io.svg';
+import githubIcon from './assets/github.svg';
 import './App.css';
 
 function getYearsOfExpirience() {
@@ -27,18 +27,39 @@ function App() {
 
       <div className="App-content">
         <h2>About</h2>
-        <p>Magna dignissim augue fermentum ante potenti gravida id iaculis gravida dictum augue. Eget non platea feugiat dis viverra faucibus. Ridiculus pretium cursus gravida est dolor. Ridiculus sociosqu sodales sit rutrum. Suscipit imperdiet nunc maecenas, potenti magna feugiat. Sem sagittis nulla aliquet et cursus. A ut praesent vel pretium? Id pretium fringilla pretium semper. Duis fermentum per laoreet parturient habitant dolor praesent. Habitant rutrum hac condimentum sem. Tempus aliquam lacus habitant litora. Felis natoque feugiat aptent nibh et iaculis bibendum dictum! Id ligula dictumst posuere natoque potenti netus aenean. Conubia ad ante dapibus bibendum volutpat.</p>
-        <p>Blandit gravida at cursus vitae? Dui proin ultricies tempor suscipit massa phasellus quisque. Penatibus vel arcu amet luctus massa. Eget sed euismod malesuada orci pharetra ante. Justo magna libero pulvinar turpis dictum eget malesuada? Duis cursus pharetra vehicula curae; mi primis iaculis primis. Iaculis lobortis parturient felis auctor est, tincidunt curae; nullam tincidunt posuere. Molestie suspendisse taciti eros nascetur torquent sapien maecenas ornare ante habitant natoque sit. Arcu molestie nibh massa placerat rutrum urna hendrerit nibh. Pharetra!</p>
-        <p>Adipiscing volutpat ante justo felis tellus netus nostra eget maecenas. Donec facilisis dignissim ultrices suspendisse nibh! Magna dapibus molestie duis. Magna nascetur duis et pellentesque ad pretium iaculis. Vel lorem felis in ac diam iaculis! Quis suscipit felis volutpat, duis laoreet. Himenaeos suscipit sociis tellus, convallis non. Natoque erat parturient curae; curae; luctus dis lacus massa ultricies. Et, tristique scelerisque pharetra nulla suspendisse. Parturient nullam luctus eu velit ligula arcu ante orci commodo cubilia. Class quisque maecenas pretium facilisi dictumst venenatis donec amet vehicula lacinia turpis aenean. Tempor.</p>
-        <p>Nibh eros in est vehicula bibendum facilisis tortor? Pharetra sagittis quam in diam lacinia malesuada cras ultricies? Accumsan dignissim tellus lacus semper duis dis nibh cras. Tempor laoreet volutpat semper nibh vulputate curae; viverra dictum; ultricies sodales. Porta platea risus non nec curae; ultrices blandit diam luctus scelerisque faucibus dui. Dictum habitasse tortor aenean. Erat dignissim pulvinar, varius phasellus orci integer suspendisse cubilia. Odio quis, varius amet scelerisque hendrerit fames.</p>
+        <p>
+          Ever since I was young I always new I wanted to do something related to technology; I found it fascinating.
+          During my grade 3 year I was tasked to create a recyling awareness poster for my school and later on that year
+          I recieved the award for computer skills.
+        </p>
+        <p>
+          Skipping forward a couple of years, when I was my grade 9 year I became curious about programming.
+          I intially assumed that I needed to know binary and so I learnt how the binary number system works and how these
+          numbers get converted into other characters using the ASCII character encoding scheme.
+          I later on realised that learning binary was not getting me any closer to my goal of learning how to program.
+          So, I went back to the drawing board and instead of assuming; this time I searched the internet asking the simple question "How do you program?".
+          I went through a couple of web pages and eventully discoved the first programming language I learnt, python.
+        </p>
+        <p>
+          Over the years I've spent a fair amount of time on languages such as ruby, java, groovy, javascript.
+          I've also dabbled in c/c++, c# and shell scripting languages such as bash and zsh.
+        </p>
 
-        <div className="App-icons">
-          <img className="App-icon" src={itchIcon} />
-          <img className="App-icon" src={githubIcon} />
+        <div className="App-icon-links">
+          <a className="App-icon-link" href="https://github.com/sihlecodes">
+            <img alt="" src={itchIcon} />
+            <p>Github</p>
+          </a>
+          <a className="App-icon-link" href="https://sihlecodes.itch.io">
+            <img alt="" src={githubIcon} />
+            <p>Itch.io</p>
+          </a>
         </div>
 
         <h2>Contact</h2>
-        <p>Iaculis ullamcorper commodo consectetur proin? Nam accumsan, laoreet dis posuere! Fermentum accumsan odio mauris taciti tempor duis convallis magnis facilisis tempor. Vivamus dictumst magnis, venenatis sapien velit class curabitur? Curae; nibh aenean magna at commodo auctor. Ac vivamus phasellus natoque morbi. Hac parturient primis facilisis vestibulum tempus ultricies. Velit est dui eleifend nulla proin euismod nostra varius nisl justo nascetur ultrices. Nec nostra etiam blandit ad tortor natoque magna pretium ligula. Suspendisse nascetur ad sapien vivamus. Diam rutrum sit lobortis, nostra scelerisque gravida libero laoreet mi curae;.</p>
+        <p>If you want to contact me you can either shoot me an email or give me a call/send a whatsapp message. Word of advice, I check emails more frequently.</p>
+        <p>sihlecodes@gmail.com</p>
+        <p>0633994508</p>
       </div>
     </div>
   );

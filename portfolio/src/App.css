@@ -5,12 +5,30 @@
   --ribbon-background-color: 40, 42, 48
 }
 
-.App-icon {
-  width: 50px;
+.App-icon-link {
+  display: inline-block;
   background-color: rgb(var(--ribbon-background-color));
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 0.35rem;
   margin: 0 5px;
+}
+
+.App-icon-link p {
+  color: white;
+  margin: 0;
+  font-size: small;
+}
+
+.App-icon-link, .App-icon-link p {
+  text-decoration: none;
+}
+
+.App-icon-links, h2 {
+  text-align: center;
+}
+
+.App-icon-link img {
+  width: 4.5rem;
 }
 
 .App-name-text {
@@ -47,7 +65,7 @@
 
 .App-header {
   background-image: url(assets/background.jpg);
-  background-position: 0px;
+  background-position: 0;
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -64,4 +82,5 @@
 
 .App-content {
   padding: 0 5vw;
+  text-align: left;
 }
