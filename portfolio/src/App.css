@@ -33,6 +33,8 @@
 
 .App-name-text {
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .App-big-text {
