@@ -1,10 +1,20 @@
 import itchIcon from './assets/itch-io.svg';
 import githubIcon from './assets/github.svg';
+import instagramIcon from './assets/instagram.svg';
 import './App.css';
 
 function getYearsOfExpirience() {
   const STARTING_YEAR = 2015
   return new Date().getFullYear() - (STARTING_YEAR + 1);
+}
+
+function IconLink({href, src, alt, label}) {
+  return (
+    <a className="App-icon-link" href={href}>
+      <img alt={alt} src={src} />
+      <p>{label}</p>
+    </a>
+  );
 }
 
 function App() {
@@ -19,8 +29,8 @@ function App() {
           </div>
 
           <div className="App-greeting-text">
-            <div className="App-big-text">Hi</div>
-            I'm <span class="App-name-text">Siphesihle Mhlongo</span>
+            <div className="App-text">Hi I'm</div>
+            <span class="App-name-text">Siphesihle Mhlongo</span>
           </div>
         </div>
       </header>
@@ -46,19 +56,13 @@ function App() {
         </p>
 
         <div className="App-icon-links">
-          <a className="App-icon-link" href="https://github.com/sihlecodes">
-            <img alt="" src={itchIcon} />
-            <p>Github</p>
-          </a>
-          <a className="App-icon-link" href="https://sihlecodes.itch.io">
-            <img alt="" src={githubIcon} />
-            <p>Itch.io</p>
-          </a>
+          <IconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
+          <IconLink src={itchIcon} href="https://sihlecodes.itch.io" label="Itch.io" />
+          <IconLink src={instagramIcon} href="https://instagram.com/sihlecodes" label="Instagram" />
         </div>
 
         <h2>Programming Language Proficiencies</h2>
         <p>A list of programming langauges I've used. Ordered by experience.</p>
-        
 
         <h2>Contact</h2>
         <p>If you want to contact me you can either shoot me an email or give me a call/send a whatsapp message. Word of advice, I check emails more frequently.</p>
