@@ -56,6 +56,10 @@ function App() {
           </a>
         </div>
 
+        <h2>Programming Language Proficiencies</h2>
+        <p>A list of programming langauges I've used. Ordered by experience.</p>
+        
+
         <h2>Contact</h2>
         <p>If you want to contact me you can either shoot me an email or give me a call/send a whatsapp message. Word of advice, I check emails more frequently.</p>
         <p>sihlecodes@gmail.com</p>
