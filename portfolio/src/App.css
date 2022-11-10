@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
 .App {
   text-align: center;
 
-  --foreground-color: rgb(181, 128, 255);
-  --ribbon-background-color: 40, 42, 48
+  /* miscellaneous colours */
+  --banner-colour-values: 40, 42, 48;
+  --banner-colour: rgb(var(--banner-colour-values));
+  --foreground-colour: rgb(181, 128, 255);
+
+  /* font colours */
+  --font-content-colour: rgb(30, 34, 38);
+  --font-heading-colour: rgb(36, 38, 44);
 }
 
 .App-icon-link {
   display: inline-block;
-  background-color: rgb(var(--ribbon-background-color));
+  background-color: var(--banner-colour);
   padding: 10px;
   border-radius: 0.35rem;
   margin: 0 5px;
@@ -31,10 +40,23 @@
   width: 4.5rem;
 }
 
+.App-greeter {
+  flex: 1;
+}
+
+.App-greeter p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
 .App-name-text {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.App-big-font {
+  font-family:'Raleway';
 }
 
 .App-big-text {
@@ -43,16 +65,16 @@
   line-height: 7.5rem;
 }
 
-.App-greeting-text {
+.App-banner {
   font-size: 1.2rem;
   flex: 1;
   text-align: center;
   background-image: -webkit-linear-gradient(left,
-      rgba(var(--ribbon-background-color), 0.15) 0%,
-      rgba(var(--ribbon-background-color), 0.25) 20%,
-      rgba(var(--ribbon-background-color), 1.00) 50%,
-      rgba(var(--ribbon-background-color), 0.25) 80%,
-      rgba(var(--ribbon-background-color), 0.15) 100%);
+      rgba(var(--banner-colour-values), 0.15) 0%,
+      rgba(var(--banner-colour-values), 0.25) 20%,
+      rgba(var(--banner-colour-values), 1.00) 50%,
+      rgba(var(--banner-colour-values), 0.25) 80%,
+      rgba(var(--banner-colour-values), 0.15) 100%);
 
   padding: 20px;
 }
@@ -82,7 +104,16 @@
   align-items: flex-end;
 }
 
+.App-content :where(h1, h2, h3) {
+  text-transform: uppercase;
+  color: var(--font-heading-colour);
+  font-family: 'Raleway';
+}
+
 .App-content {
   padding: 0 5vw;
   text-align: left;
+  color: var(--font-content-colour);
+  font-family: 'Roboto Condensed';
+  font-size: 1.1rem;
 }

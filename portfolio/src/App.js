@@ -23,14 +23,16 @@ function App() {
       <header className="App-header">
         <div className="App-header-content">
           <div className="App-experience-text" >
-            <div className="App-big-text">{getYearsOfExpirience()}+</div>
+            <div className="App-big-text App-big-font">{getYearsOfExpirience()}+</div>
             <div className="App-medium-text">years</div>
             <div>of coding</div>
           </div>
 
-          <div className="App-greeting-text">
-            <div className="App-text">Hi I'm</div>
-            <span class="App-name-text">Siphesihle Mhlongo</span>
+          <div className="App-greeter">
+            <p>Hi I'm</p>
+            <div className="App-banner">
+              <span class="App-name-text App-big-font">Siphesihle Mhlongo</span>
+            </div>
           </div>
         </div>
       </header>
