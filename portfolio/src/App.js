@@ -8,7 +8,7 @@ function getYearsOfExpirience() {
   return new Date().getFullYear() - (STARTING_YEAR + 1);
 }
 
-function IconLink({href, src, alt, label}) {
+function IconLink({ href, src, alt, label }) {
   return (
     <a className="App-icon-link" href={href}>
       <img alt={alt} src={src} />
@@ -63,8 +63,22 @@ function App() {
           <IconLink src={instagramIcon} href="https://instagram.com/sihlecodes" label="Instagram" />
         </div>
 
-        <h2>Programming Language Proficiencies</h2>
+        <h2>Proficiencies</h2>
+
+        <h3>Programming Languages</h3>
         <p>A list of programming langauges I've used. Ordered by experience.</p>
+        <p>Python 3 years</p>
+        <p>Java 2 years</p>
+        <p>C# 1 year</p>
+        <p>Javascript 1+ years</p>
+        <p>Ruby about a year</p>
+
+        <h3>Frameworks</h3>
+        <p>A list of frameworks I've used. Ordered by experience.</p>
+        <p>React</p>
+        <p>React Native</p>
+        <p>Kivy</p>
+        <p>Qt/QML</p>
 
         <h2>Contact</h2>
         <p>If you want to contact me you can either shoot me an email or give me a call/send a whatsapp message. Word of advice, I check emails more frequently.</p>
