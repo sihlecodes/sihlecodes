@@ -3,7 +3,7 @@ import githubIcon from './assets/github.svg';
 import instagramIcon from './assets/instagram.svg';
 import './App.css';
 
-function getYearsOfExpirience() {
+function getYearsOfExperience() {
   const STARTING_YEAR = 2015
   return new Date().getFullYear() - (STARTING_YEAR + 1);
 }
@@ -23,7 +23,7 @@ function App() {
       <header className="App-header">
         <div className="App-header-content">
           <div className="App-experience-text" >
-            <div className="App-big-text App-big-font">{getYearsOfExpirience()}+</div>
+            <div className="App-big-text App-big-font">{getYearsOfExperience()}+</div>
             <div className="App-medium-text">years</div>
             <div>of coding</div>
           </div>
@@ -51,8 +51,7 @@ function App() {
           Over the years I've spent a fair amount of time on languages such as ruby, java, groovy, javascript. I've also dabbled in C/C++, C# and shell scripting languages such as bash and zsh.
         </p>
         <h3>Check out some of my work</h3>
-        <p>
-          A quick word of warning: I haven't used my instagram for a while. 😅</p>
+        <p>A quick word of warning: I haven't used my instagram for a while. 😅</p>
 
         <div className="App-icon-links">
           <IconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
