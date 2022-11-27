@@ -14,47 +14,6 @@
   --font-heading-colour: rgb(36, 38, 44);
 }
 
-.App-icon-link {
-  display: inline-block;
-  background-color: var(--banner-colour);
-  padding: 10px;
-  border-radius: 0.35rem;
-  margin: 0 5px;
-}
-
-.App-icon-link p {
-  color: white;
-  margin: 0;
-  font-size: small;
-}
-
-.App-icon-link, .App-icon-link p {
-  text-decoration: none;
-}
-
-.App-icon-links, h2 {
-  text-align: center;
-}
-
-.App-icon-link img {
-  width: 4.5rem;
-}
-
-.App-greeter {
-  flex: 1;
-}
-
-.App-greeter p {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.App-name-text {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
 .App-big-font {
   font-family:'Raleway';
 }
@@ -63,45 +22,6 @@
   font-size: 8rem;
   font-weight: 900;
   line-height: 7.5rem;
-}
-
-.App-banner {
-  font-size: 1.2rem;
-  flex: 1;
-  text-align: center;
-  background-image: -webkit-linear-gradient(left,
-      rgba(var(--banner-colour-values), 0.15) 0%,
-      rgba(var(--banner-colour-values), 0.25) 20%,
-      rgba(var(--banner-colour-values), 1.00) 50%,
-      rgba(var(--banner-colour-values), 0.25) 80%,
-      rgba(var(--banner-colour-values), 0.15) 100%);
-
-  padding: 20px;
-}
-
-.App-experience-text {
-  flex: 1;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0px;
-  right: 0px;
-}
-
-.App-header {
-  background-image: url(assets/background.jpg);
-  background-position: 0;
-  background-size: cover;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 1vmin);
-  color: white;
-}
-
-.App-header-content {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
 }
 
 .App-content :where(h1, h2, h3) {

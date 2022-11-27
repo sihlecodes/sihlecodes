@@ -1,0 +1,27 @@
+.About-icon-link {
+  display: inline-block;
+  background-color: var(--banner-colour);
+  padding: 10px;
+  border-radius: 0.35rem;
+  margin: 0 5px;
+}
+
+.About-icon-link p {
+  color: white;
+  margin: 0;
+  font-size: small;
+}
+
+.About-icon-link,
+.About-icon-link p {
+  text-decoration: none;
+}
+
+.About-icon-links,
+h2 {
+  text-align: center;
+}
+
+.About-icon-link img {
+  width: 4.5rem;
+}

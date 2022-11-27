@@ -1,0 +1,12 @@
+.Contact-form-field {
+  margin-bottom: 5px;
+}
+
+.Contact-form-field label, input {
+  display: block;
+}
+
+.Contact-form-field textarea {
+  resize: none;
+  /* width: 100%; */
+}
