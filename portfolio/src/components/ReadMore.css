@@ -1,0 +1,13 @@
+.ReadMore,
+.ReadMore :nth-last-child(2) {
+  display: inline;
+}
+
+.ReadMore-toggle {
+  color: #8f8f8f;
+  cursor: pointer;
+}
+
+.ReadMore-toggle::before {
+  content: " ";
+}
