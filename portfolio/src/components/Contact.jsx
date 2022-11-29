@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 import './Contact.css';
 
-function ContactMe() {
+function ContactForm() {
   const form = useRef();
 
   const defaultButtonText = "Send message";
@@ -31,7 +31,8 @@ function ContactMe() {
       <div className="Contact-form-field"><label for="sender_email">Your email</label><input type="text" name="sender_email" /></div>
       <div className="Contact-form-field"><label for="sender_message">Message</label><textarea type="text" name="sender_message"></textarea></div>
       <div className="Contact-form-field"><input type="submit" value={buttonText} /></div>
-    </form>);
+    </form>
+  );
 }
 
 function Contact() {
@@ -43,7 +44,7 @@ function Contact() {
       </p>
       <p>sihlecodes@gmail.com</p>
       <p>0633994508</p>
-      <ContactMe />
+      <ContactForm />
     </Fragment>
   );
 }

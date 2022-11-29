@@ -11,23 +11,20 @@ function Header() {
   return (
     <Fragment>
       <header className="Header">
-        <nav className="Header-nav">
+        <nav>
           <a href="blank">About</a>
           <a href="blank">Proficiencies</a>
           <a href="blank">Contact</a>
         </nav>
         <div className="Header-content">
-          <div className="Header-experience-text" >
-            <div className="App-big-text App-big-font">{getYearsOfExperience()}+</div>
-            <div className="App-medium-text">years</div>
-            <div>of coding</div>
+          <div className="Header-experience-badge" >
+            <div className="Header-experience-years App-big-text App-big-font">{getYearsOfExperience()}+</div>
+            <div className="App-medium-text">years</div>of coding
           </div>
 
-          <div className="Header-greeter">
+          <div className="Header-intro-banner">
             <p>Hi I'm</p>
-            <div className="Header-banner">
-              <span class="Header-name-text App-big-font">Siphesihle Mhlongo</span>
-            </div>
+            <h1 className="App-big-font">Siphesihle Mhlongo</h1>
           </div>
         </div>
       </header>

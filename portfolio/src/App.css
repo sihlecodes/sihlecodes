@@ -4,14 +4,11 @@
 .App {
   text-align: center;
 
-  /* miscellaneous colours */
-  --banner-colour-values: 40, 42, 48;
-  --banner-colour: rgb(var(--banner-colour-values));
-  --foreground-colour: rgb(181, 128, 255);
-
-  /* font colours */
   --font-content-colour: rgb(30, 34, 38);
   --font-heading-colour: rgb(36, 38, 44);
+
+  --foreground-colour: rgb(181, 128, 255);
+  --dark-colour-values: 40, 42, 48;
 }
 
 .App-big-font {
@@ -19,15 +16,13 @@
 }
 
 .App-big-text {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 900;
-  line-height: 7.5rem;
 }
 
-.App-content :where(h1, h2, h3) {
-  text-transform: uppercase;
-  color: var(--font-heading-colour);
-  font-family: 'Raleway';
+.App-medium-text {
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .App-content {
@@ -36,4 +31,14 @@
   color: var(--font-content-colour);
   font-family: 'Roboto Condensed';
   font-size: 1.1rem;
+}
+
+.App-content :where(h1, h2, h3) {
+  text-transform: uppercase;
+  color: var(--font-heading-colour);
+  font-family: 'Raleway';
+}
+
+.App-content h2 {
+  text-align: center;
 }

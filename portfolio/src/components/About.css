@@ -1,8 +1,8 @@
 .About-icon-link {
   display: inline-block;
-  background-color: var(--banner-colour);
-  padding: 10px;
-  border-radius: 0.35rem;
+  background-color: rgba(var(--dark-colour-values));
+  padding: 1rem;
+  border-radius: 0.65rem;
   margin: 0 5px;
 }
 
@@ -17,8 +17,7 @@
   text-decoration: none;
 }
 
-.About-icon-links,
-h2 {
+.About-icon-links {
   text-align: center;
 }
 
