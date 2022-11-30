@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './ReadMore.css';
 
 function ReadMore({ children, toggle = true }) {
@@ -10,15 +9,15 @@ function ReadMore({ children, toggle = true }) {
     setReading(!reading);
 
     if(!toggle)
-      toggleElement.current.style.display = "none";
+      toggleElement.current.style.display = 'none';
   }
 
   return (
     <div className="ReadMore ">
-      {reading ? children : ""}
+      {reading ? children : ''}
 
       <span className="ReadMore-toggle" ref={toggleElement} onClick={toggleReading}>
-        read { reading ? "less" : "more" }
+        read { reading ? 'less' : 'more' }
       </span>
     </div>
   );

@@ -6,21 +6,19 @@ import './Contact.css';
 function ContactForm() {
   const form = useRef();
 
-  const defaultButtonText = "Send message";
+  const defaultButtonText = 'Send message';
   const [buttonText, setButtonText] = useState(defaultButtonText);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    setButtonText("Sending...");
+    setButtonText('Sending...');
 
     emailjs.sendForm('sihlecodes.gmail', 'sihlecodes.template', form.current, 'c0ujXFzztdrKXLZx0').then(
       (response) => {
         setButtonText(defaultButtonText);
-        console.log("status:", response.status, "text:", response.text);
       }, (error) => {
         setButtonText(defaultButtonText);
-        console.log(error);
       }
     )
   }
