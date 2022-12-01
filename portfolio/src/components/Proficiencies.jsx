@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 import './Proficiencies.css';
 
 function Proficiency({ name, years, children }) {

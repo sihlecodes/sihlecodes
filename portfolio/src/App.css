@@ -9,6 +9,7 @@
 
   --foreground-colour: rgb(181, 128, 255);
   --dark-colour-values: 40, 42, 48;
+  margin-bottom: 0.8rem;
 }
 
 .App-big-font {
