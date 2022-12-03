@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import ReadMore from './ReadMore';
 
 import itchIcon from '../assets/itch-io.svg';
-import githubIcon from '../assets/github.svg';
+import githubIcon from '../assets/python.svg';
 import instagramIcon from '../assets/instagram.svg';
 
 import './About.css';
