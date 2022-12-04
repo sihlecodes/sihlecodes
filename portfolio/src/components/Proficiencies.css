@@ -1,3 +1,18 @@
-.Proficiencies-content p b {
+.Proficiency {
+  width: 200px;
+}
+
+.Proficiency p b {
   font-family: 'Raleway';
+}
+
+.Proficiency p {
+  text-align: center;
+}
+
+.Proficiencies-display {
+  width: 70vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }

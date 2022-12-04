@@ -23,9 +23,8 @@ function About() {
 
       <div className="About-content">
         <p>
-          Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.
-          During my grade 3 year I was tasked to create a recycling awareness poster for my school and later on that year
-          I received the award for computer skills.
+        I am a Self-driven, hardworking, and dependable individual. I enjoy problem solving, programming, and 
+learning new skills.
         </p>
 
         <h3>My Story</h3>
