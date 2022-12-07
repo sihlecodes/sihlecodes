@@ -10,10 +10,13 @@ function App() {
     <div className="App">
       <Header />
 
-      <div className="App-content">
+      <div className="App-content-area">
         <About />
         <Proficiencies />
-        <Contact />
+      </div>
+
+      <div className='App-contact-area'>
+        <Contact className="" />
       </div>
     </div>
   );

@@ -26,7 +26,12 @@
   font-weight: 500;
 }
 
-.App-content {
+.App-contact-area {
+  background-color: aqua;
+  padding-bottom: 20px;
+}
+
+.App-content-area {
   padding: 0 5vw;
   text-align: left;
   color: var(--font-content-colour);
@@ -34,12 +39,12 @@
   font-size: 1.1rem;
 }
 
-.App-content :where(h1, h2, h3) {
+.App-content-area :where(h1, h2, h3) {
   text-transform: uppercase;
   color: var(--font-heading-colour);
   font-family: 'Raleway', sans-serif;
 }
 
-.App-content h2 {
+.App-content-area h2 {
   text-align: center;
 }
