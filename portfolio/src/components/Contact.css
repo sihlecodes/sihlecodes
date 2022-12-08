@@ -6,23 +6,15 @@
   margin: auto;
 }
 
-.Contact-form {
-  background-color: rgb(var(--dark-colour-values));
-  width: fit-content;
-  padding: 2rem;
-  margin: auto;
-  border-radius: 0.8rem;
-}
-
-.Contact-form label {
-  color: #aaa;
-}
-
 .Contact-form :where(input[type='text'], textarea) {
-  background-color: #444;
-  border: none;
-  padding: 0.25rem 0.3rem;
+  padding: 8px 10px;
   border-radius: 0.2rem;
+  border: 2px black solid;
+}
+
+.Contact-required-field {
+  color: red;
+  font-size: 0.85rem;
 }
 
 .Contact-form-field {

@@ -42,6 +42,10 @@ learning new skills.
           </ReadMore>
         </div>
 
+        <h3>My Vision</h3>
+
+        In x years I want to be at Y place in life.
+
         <h3>Check out some of my work</h3>
         <p>A quick word of warning: I haven't used my instagram for a while. 😅</p>
 

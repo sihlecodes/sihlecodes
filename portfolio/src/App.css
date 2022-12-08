@@ -27,7 +27,7 @@
 }
 
 .App-contact-area {
-  background-color: aqua;
+  background-color: rgb(129, 187, 210);
   padding-bottom: 20px;
 }
 
@@ -39,7 +39,8 @@
   font-size: 1.1rem;
 }
 
-.App-content-area :where(h1, h2, h3) {
+:where(.App-content-area, .App-contact-area) :where(h1, h2, h3) {
+  text-align: center;
   text-transform: uppercase;
   color: var(--font-heading-colour);
   font-family: 'Raleway', sans-serif;
