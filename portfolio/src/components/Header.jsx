@@ -11,11 +11,7 @@ function Header() {
   return (
     <Fragment>
       <header className="Header">
-        <nav>
-          <a href="blank">About</a>
-          <a href="blank">Proficiencies</a>
-          <a href="blank">Contact</a>
-        </nav>
+        
         <div className="Header-content">
           <div className="Header-experience-badge" >
             <div className="Header-experience-years App-big-text App-big-font">{getYearsOfExperience()}+</div>

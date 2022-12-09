@@ -11,6 +11,18 @@
   --dark-colour-values: 40, 42, 48;
 }
 
+
+.App h2 {
+  text-align: center;
+}
+
+.App :where(h1, h2, h3) {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--font-heading-colour);
+  font-family: 'Raleway', sans-serif;
+}
+
 .App-big-font {
   font-family:'Raleway', sans-serif;
 }
@@ -33,18 +45,10 @@
 .App-content-area {
   padding: 0 5vw;
   text-align: left;
-  color: var(--font-content-colour);
+}
+
+:where(.App-content-area, .App-contact-area) {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.1rem;
-}
-
-:where(.App-content-area, .App-contact-area) :where(h1, h2, h3) {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--font-heading-colour);
-  font-family: 'Raleway', sans-serif;
-}
-
-.App-content-area h2 {
-  text-align: center;
+  color: var(--font-content-colour);
 }

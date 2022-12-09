@@ -2,19 +2,9 @@
   margin-top: 0;
 }
 
-.Contact-content {
-  text-align: center;
-}
-
-.Contact-content input {
-  margin: auto;
-}
-
-.Contact-text-input {
-  padding: 8px 10px;
-  border-radius: 0.2rem;
-  outline: none;
-  border: 2px black solid;
+.Contact-required-field {
+  color: red;
+  font-size: 0.85rem;
 }
 
 .Contact-submit-button {
@@ -32,20 +22,29 @@
   background-color: gray;
 }
 
-.Contact-required-field {
-  color: red;
-  font-size: 0.85rem;
+.Contact-text-input {
+  padding: 8px 10px;
+  border-radius: 0.2rem;
+  margin: auto;
+  outline: none;
+  border: 2px black solid;
+  width: calc(100% - 20px - 0.4rem);
+}
+
+.Contact-form {
+  width: min(450px, 50vw);
+  margin: auto;
 }
 
 .Contact-form-field {
   margin-bottom: 5px;
 }
 
-.Contact-form-field label,
-.Contact-form-field input {
+.Contact-form-field :where(label, input) {
   display: block;
 }
 
 .Contact-form-field textarea {
   resize: unset;
+  height: 100px;
 }

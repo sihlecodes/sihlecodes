@@ -51,32 +51,5 @@
   padding: 20px;
   text-transform: uppercase;
   font-size: 1.7rem;
-}
-
-.Header nav {
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: fixed;
-  width: 100%;
-  padding: 5px;
-  background-color: rgb(var(--dark-colour-values));
-}
-
-.Header nav a {
-  color: #eee;
-  text-decoration: none;
-  padding: 0.8rem 1rem;
-}
-
-.Header nav a:hover {
-  border-radius: 0.4em;
-  background-image: -webkit-linear-gradient(45deg,
-      rgba(var(--nav-hover-colour-values), 0.2),
-      rgba(var(--nav-hover-colour-values), 0.05));
-}
-
-.Header nav a:not(:last-child) {
-  margin-right: 0.2rem;
+  color: white;
 }
