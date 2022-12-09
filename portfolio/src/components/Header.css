@@ -54,9 +54,14 @@
 }
 
 .Header nav {
-  margin: 1.2rem;
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(var(--dark-colour-values));
 }
 
 .Header nav a {
