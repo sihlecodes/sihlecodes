@@ -1,5 +1,9 @@
 .Proficiency {
-  width: 200px;
+  width: 220px;
+  background-color: rgb(var(--dark-colour-values));
+  color: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
 }
 
 .Proficiency p b {
@@ -7,12 +11,32 @@
 }
 
 .Proficiency p {
+  margin-top: 0;
   text-align: center;
 }
 
 .Proficiencies-display {
-  width: 70vw;
+  width: fit-content;
   margin: auto;
   display: grid;
-  grid-template-columns: auto auto auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .Proficiencies-display {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: calc(500px + 10rem)) and (max-width: 1000px) {
+  .Proficiencies-display {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Proficiencies-display {
+    grid-template-columns: auto auto auto;
+  }
 }
