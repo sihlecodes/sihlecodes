@@ -1,3 +1,7 @@
+.Contact h2 {
+  margin-top: 0;
+}
+
 .Contact-content {
   text-align: center;
 }
@@ -6,10 +10,26 @@
   margin: auto;
 }
 
-.Contact-form :where(input[type='text'], textarea) {
+.Contact-text-input {
   padding: 8px 10px;
   border-radius: 0.2rem;
+  outline: none;
   border: 2px black solid;
+}
+
+.Contact-submit-button {
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.Contact-submit-button:hover {
+  background-color: lightgray;
+}
+
+.Contact-submit-button:active {
+  background-color: gray;
 }
 
 .Contact-required-field {

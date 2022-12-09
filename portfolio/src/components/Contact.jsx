@@ -27,36 +27,34 @@ function ContactForm() {
     <form className="Contact-form" ref={form} onSubmit={sendEmail}>
       <div className="Contact-form-field">
         <label for="sender_name"><span class className="Contact-required-field">*</span> Your name <span className="Contact-required-field">Required</span></label>
-        <input type="text" name="sender_name" required="true" />
+        <input className="Contact-text-input" type="text" name="sender_name" required="true" />
       </div>
 
       <div className="Contact-form-field">
         <label for="sender_email">Your email address</label>
-        <input type="text" name="sender_email" />
+        <input className="Contact-text-input" type="text" name="sender_email" />
       </div>
 
       <div className="Contact-form-field">
         <label for="sender_message"><span className="Contact-required-field">*</span> Message <span className="Contact-required-field">Required</span></label>
-        <textarea type="text" name="sender_message" required="true"></textarea>
+        <textarea className="Contact-text-input" name="sender_message" required="true"></textarea>
       </div>
 
-      <div className="Contact-form-field">
-        <input type="submit" value={buttonText} />
-      </div>
+        <input className="Contact-submit-button" type="submit" value={buttonText} />
     </form>
   );
 }
 
 function Contact() {
   return (
-    <Fragment>
+    <div className="Contact">
       <h2>Get In Touch</h2>
 
       <div className="Contact-content">
         <p>Want to get in contact with me? Send me an email.</p>
         <ContactForm />
       </div>
-    </Fragment>
+    </div>
   );
 }
 
