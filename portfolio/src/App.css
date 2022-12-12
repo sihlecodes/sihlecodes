@@ -38,8 +38,12 @@
 }
 
 .App-contact-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(129, 187, 210);
   padding: 2rem;
+  height: 100vh;
 }
 
 .App-content-area {
@@ -47,8 +51,35 @@
   text-align: left;
 }
 
-:where(.App-content-area, .App-contact-area) {
+.App nav {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 2.8rem;
+  background-color: rgb(var(--dark-colour-values));
+}
+
+.App nav a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+}
+
+.App nav a:hover {
+  color: lightseagreen;
+}
+
+.App nav a.active {
+  font-weight: bold;
+}
+
+:where(.App-content-area, .App-contact-area) :not(:where(h1, h2, h3)) {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--font-content-colour);
 }

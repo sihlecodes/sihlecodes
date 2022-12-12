@@ -6,6 +6,10 @@
   border-radius: 0.8rem;
 }
 
+.Proficiency * {
+  color: white;
+}
+
 .Proficiency p b {
   font-family: 'Raleway';
 }

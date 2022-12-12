@@ -47,14 +47,14 @@ function ContactForm() {
 
 function Contact() {
   return (
-    <div className="Contact">
+    <Fragment>
       <h2>Get In Touch</h2>
 
       <div className="Contact-content">
         <p>Want to get in contact with me? Send me an email.</p>
         <ContactForm />
       </div>
-    </div>
+    </Fragment>
   );
 }
 
