@@ -1,10 +1,10 @@
 .Header {
+  display: flex;
+  flex-direction: column;
   background-image: url(../assets/background.jpg);
   background-position: 0;
   background-size: cover;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
   font-size: calc(10px + 1vmin);
   color: white;
 
@@ -15,7 +15,7 @@
 .Header-content {
   flex: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .Header-experience-badge {
