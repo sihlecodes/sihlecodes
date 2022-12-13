@@ -1,6 +1,13 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  color: var(--font-content-colour);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .loader {
