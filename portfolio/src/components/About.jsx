@@ -23,26 +23,30 @@ function About() {
 
       <div className="About-content">
         <p>
-        I am a Self-driven, hardworking, and dependable individual. I enjoy problem solving, programming, and 
-learning new skills.
+          I am a Self-driven, hardworking, and dependable individual. I enjoy problem solving, programming, and
+          learning new skills.
         </p>
 
         <h3>My Story</h3>
         <div>
-          Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.
-          <ReadMore>
+          <p>Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.</p>
+          {/* <ReadMore> */}
             <p>
-              Skipping forward a couple of years, when I was my grade 9 year I became curious about programming. I initially assumed that I needed to know binary and so I learnt how the binary number system works and how these numbers get converted into other characters using the ASCII character encoding scheme. I later on realized that learning binary was not getting me any closer to my goal of learning how to program. So, I went back to the drawing board and instead of assuming; this time I searched the internet asking the simple question "How do you program?". I went through a couple of web pages and eventually discovered the first programming language I learnt, python.
+              When I was in high school, at age 15, I became curious about programming but IT wasn’t offered as a subject at my school so I set out to teach myself. Initially, I thought that programming was all about numbers and binary, but quickly realized that wasn’t the case. So I went back to the drawing board and did some actual research on how programming is actually done. In the process, I discovered python: the language that introduced me to the programming world.</p>
+            <p>
+              Despite all the confusion and frustration in the beginning, I fell in love. I knew that this is something I want to do for the rest of my life. Till this day, I feel a strange and deep connection with programming: it fulfills me.
             </p>
             <p>
-              Over the years I've spent a fair amount of time on languages such as ruby, java, groovy, javascript. I've also dabbled in C/C++, C# and shell scripting languages such as bash and zsh.
+              <i>Deciding to learn programming is the best decision I’ve ever made.</i>
             </p>
-          </ReadMore>
+          {/* </ReadMore> */}
         </div>
 
         <h3>My Vision</h3>
 
-        <p>In x years I want to be at Y place in life.</p>
+        <p>Ultimately, I believe <i>my purpose in life is making people’s lives easier through technological means.</i> Unfortunately, It’s not exactly clear to me, just yet, how I’ll make that work.</p>
+
+        <p>So for now, I want to focus on my studies in University. Along the way also I want to offer my assistance to at least a handful of people and help them realize their own love for programming.</p>
 
         <h3>Check out some of my work</h3>
         <p>A quick word of warning: I haven't used my instagram for a while. 😅</p>
