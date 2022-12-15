@@ -10,7 +10,7 @@ import './Proficiencies.css';
 function Proficiency({ name, years, src, children }) {
   return (
     <div className='Proficiency'>
-      <img src={src} alt={`A logo of the ${name} programming language.`}/>
+      <img src={src} alt={`A logo of the ${name} programming language.`} />
       <p><b>{name}</b> about {years} year{(Number(years) > 1) ? 's' : ''}</p>
       {children}
     </div>
@@ -22,9 +22,20 @@ function Proficiencies() {
     <Fragment>
       <h2>Proficiencies</h2>
 
-      <div className="Proficiencies-content">
-        <h3>Programming Languages</h3>
-        <p>A list of programming languages I've used for the most time. Ordered by experience.</p>
+      <div className="Proficiencies-content ">
+        <div className="App-text-content">
+          <h3>Programming Languages</h3>
+          <p>A list of programming languages I've used for the most time. Ordered by experience.</p>
+
+          <p>I've also briefly played around the ARM flavor of assembler, C/C++</p>
+
+          <h3>Frameworks</h3>
+          <p>A list of frameworks I've used. Ordered by experience.</p>
+          <p>Kivy</p>
+          <p>Qt/QML</p>
+          <p>React</p>
+          <p>React Native</p>
+        </div>
 
         <div className="Proficiencies-display">
           <Proficiency name="Python" years="3" src={python}>
@@ -47,16 +58,8 @@ function Proficiencies() {
             This happens to be the latest languages I've learnt. I learnt it as part of my first year modules in university. I don't find it particularly interesting. I guess I like it's almost java like structure and syntax. 🤣
           </Proficiency>
         </div>
-
-        <p>I've also briefly played around the ARM flavor of assembler, C/C++</p>
-
-        <h3>Frameworks</h3>
-        <p>A list of frameworks I've used. Ordered by experience.</p>
-        <p>Kivy</p>
-        <p>Qt/QML</p>
-        <p>React</p>
-        <p>React Native</p>
       </div>
+
     </Fragment>);
 }
 

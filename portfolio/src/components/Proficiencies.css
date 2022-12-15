@@ -23,6 +23,10 @@
   width: 64px;
 }
 
+.Proficiencies-content {
+  margin-bottom: var(--App-section-boundary-size);
+}
+
 .Proficiencies-display {
   width: fit-content;
   margin: auto;

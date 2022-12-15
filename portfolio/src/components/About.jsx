@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import ReadMore from './ReadMore';
+// import ReadMore from './ReadMore';
 
 import itchIcon from '../assets/itch-io.svg';
 import githubIcon from '../assets/github.svg';
@@ -21,7 +21,7 @@ function About() {
     <Fragment>
       <h2>About</h2>
 
-      <div className="About-content">
+      <div className="About-content App-text-content">
         <p>
           I am a Self-driven, hardworking, and dependable individual. I enjoy problem solving, programming, and
           learning new skills.
