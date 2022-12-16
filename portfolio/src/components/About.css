@@ -7,7 +7,12 @@
   background-color: rgba(var(--dark-colour-values));
   padding: 1rem;
   border-radius: 0.65rem;
-  margin: 0 5px;
+  margin: 0 10px;
+  transition: transform 200ms;
+}
+
+.About-icon-link:hover {
+  transform: scale(1.05);
 }
 
 .About-icon-link p {

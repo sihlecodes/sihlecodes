@@ -15,9 +15,17 @@
 
 .App :where(h1, h2, h3) {
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--font-heading-colour);
   font-family: 'Raleway', sans-serif;
+}
+
+.App-content-area #about {
+  background-color: lightblue;
+}
+
+.App-content-area :where(#about, #proficiencies) {
+  padding: 2rem 0;
 }
 
 .App-big-font {
@@ -29,12 +37,7 @@
   font-weight: 900;
 }
 
-.App-medium-text {
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-
-.App-contact-area {
+.App-contact-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +45,11 @@
   background-color: rgb(129, 187, 210);
   padding: 2rem;
   height: 100vh;
+}
+
+.App-medium-text {
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .App-text-content {

@@ -25,16 +25,7 @@ function Proficiencies() {
       <div className="Proficiencies-content ">
         <div className="App-text-content">
           <h3>Programming Languages</h3>
-          <p>A list of programming languages I've used for the most time. Ordered by experience.</p>
-
-          <p>I've also briefly played around the ARM flavor of assembler, C/C++</p>
-
-          <h3>Frameworks</h3>
-          <p>A list of frameworks I've used. Ordered by experience.</p>
-          <p>Kivy</p>
-          <p>Qt/QML</p>
-          <p>React</p>
-          <p>React Native</p>
+          
         </div>
 
         <div className="Proficiencies-display">

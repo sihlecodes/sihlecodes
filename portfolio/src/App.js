@@ -25,7 +25,7 @@ function App() {
         <section id="proficiencies"><Proficiencies /></section>
       </div>
 
-      <section id="contact" className='App-contact-area'>
+      <section id="contact" className='App-contact-section'>
         <Contact />
       </section>
     </div>

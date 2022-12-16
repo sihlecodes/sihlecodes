@@ -27,6 +27,12 @@ function About() {
           learning new skills.
         </p>
 
+        <div className="About-icon-links">
+          <AboutIconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
+          <AboutIconLink src={itchIcon} href="https://sihlecodes.itch.io" label="Itch.io" />
+          <AboutIconLink src={instagramIcon} href="https://instagram.com/sihlecodes" label="Instagram" />
+        </div>
+
         <h3>My Story</h3>
         <div>
           <p>Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.</p>
@@ -48,14 +54,7 @@ function About() {
 
         <p>So for now, I want to focus on my studies in University. Along the way also I want to offer my assistance to at least a handful of people and help them realize their own love for programming.</p>
 
-        <h3>Check out some of my work</h3>
-        <p>A quick word of warning: I haven't used my instagram for a while. 😅</p>
-
-        <div className="About-icon-links">
-          <AboutIconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
-          <AboutIconLink src={itchIcon} href="https://sihlecodes.itch.io" label="Itch.io" />
-          <AboutIconLink src={instagramIcon} href="https://instagram.com/sihlecodes" label="Instagram" />
-        </div>
+        
       </div>
     </Fragment>
   )
