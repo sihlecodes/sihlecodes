@@ -10,7 +10,7 @@ import './Proficiencies.css';
 function Proficiency({ name, years, src, children }) {
   return (
     <div className='Proficiency'>
-      <img src={src} alt={`A logo of the ${name} programming language.`} />
+      {/* <img src={src} alt={`A logo of the ${name} programming language.`} /> */}
       <p><b>{name}</b> about {years} year{(Number(years) > 1) ? 's' : ''}</p>
       {children}
     </div>

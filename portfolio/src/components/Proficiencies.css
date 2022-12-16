@@ -30,25 +30,9 @@
 .Proficiencies-display {
   width: fit-content;
   margin: auto;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
-}
-
-@media (max-width: 600px) {
-  .Proficiencies-display {
-    grid-template-columns: auto;
-  }
-}
-
-@media (min-width: calc(500px + 10rem)) and (max-width: 1000px) {
-  .Proficiencies-display {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .Proficiencies-display {
-    grid-template-columns: auto auto auto;
-  }
 }
