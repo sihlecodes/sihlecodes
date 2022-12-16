@@ -20,7 +20,7 @@ h2 {
   border-top: 16px solid #3498db;
   border-radius: 50%;
   animation: spin 2s linear infinite;
-  z-index: 10;
+  z-index: 1000;
 }
 
 @keyframes spin {

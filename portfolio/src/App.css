@@ -11,11 +11,12 @@
   --dark-colour-values: 40, 42, 48;
 
   --App-section-boundary-size: 3rem;
+
+  display: none;
 }
 
 .App :where(h1, h2, h3) {
   text-align: center;
-  /* text-transform: uppercase; */
   color: var(--font-heading-colour);
   font-family: 'Raleway', sans-serif;
 }
