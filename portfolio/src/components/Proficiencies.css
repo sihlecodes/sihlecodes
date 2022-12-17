@@ -1,38 +1,35 @@
-.Proficiency {
-  width: 220px;
+.Proficiency-card {
+  width: 300px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+} 
+
+.Proficiency-card .picture {
+  width: 100%;
+  height: 250px;
+  background-color: aquamarine;
+}
+
+.Proficiency-card .text {
   background-color: rgb(var(--dark-colour-values));
   color: white;
   padding: 2rem;
-  border-radius: 0.8rem;
   font-size: 1rem;
-}
-
-.Proficiency p b {
-  font-family: 'Raleway';
-}
-
-.Proficiency * {
-  margin-top: 0;
-  color: white;
   text-align: center;
 }
 
-.Proficiency img {
-  display: block;
-  margin: 10px auto;
-  width: 64px;
+.Proficiency-card .text p b {
+  font-family: 'Raleway';
+}
+
+.Proficiency-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
 }
 
 .Proficiencies-content {
   margin-bottom: var(--App-section-boundary-size);
-}
-
-.Proficiencies-display {
-  width: fit-content;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
 }
