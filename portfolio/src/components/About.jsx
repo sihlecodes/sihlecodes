@@ -45,14 +45,14 @@ function About() {
         <div>
           <p>Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.</p>
           {/* <ReadMore> */}
-            <p>
-              When I was in high school, at age 15, I became curious about programming but IT wasn’t offered as a subject at my school so I set out to teach myself. Initially, I thought that programming was all about numbers and binary, but quickly realized that wasn’t the case. So I went back to the drawing board and did some actual research on how programming is actually done. In the process, I discovered python: the language that introduced me to the programming world...</p>
-            <p>
-              Despite all the confusion and frustration in the beginning, I fell in love. I knew that this is something I want to do for the rest of my life. Till this day, I feel a strange and deep connection with programming: it fulfills me.
-            </p>
-            <p>
-              <i>Deciding to learn programming was and still is the best decision I’ve ever made.</i>
-            </p>
+          <p>
+            When I was in high school, at age 15, I became curious about programming but IT wasn’t offered as a subject at my school so, I set out to teach myself. Initially, I thought that programming was all about numbers and binary, but I quickly realized that wasn’t the case. So, I went back to the drawing board and did some actual research on how programming is actually done. In the process, I discovered python: the language that introduced me to the programming world.</p>
+          <p>
+            After lots and lots of confusion and frustration, it all just <i>clicked</i> and I fell in love with programming. I know this sounds totally cliché but, from then I knew,  I’d be programming for the rest of my life. Till this day, I feel a strange and deep connection with programming: it fulfills me.
+          </p>
+          <p>
+            <i>Deciding to learn programming was and still is the best decision I’ve ever made.</i>
+          </p>
           {/* </ReadMore> */}
         </div>
 
@@ -62,7 +62,7 @@ function About() {
 
         <p>So for now, I want to focus on my studies in University. Along the way also I want to offer my assistance to at least a handful of people and help them realize their own love for programming.</p>
 
-        
+
       </div>
     </Fragment>
   )
