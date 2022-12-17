@@ -12,7 +12,7 @@
 
   --App-section-boundary-size: 3rem;
 
-  display: none;
+  /* display: none; */
 }
 
 .App :where(h1, h2, h3) {

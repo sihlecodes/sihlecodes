@@ -9,12 +9,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const hide = (e) => e.style.display = 'none';
 
 window.addEventListener('load', () => {
-    hide(document.querySelector('.loader'));
+    // hide(document.querySelector('.loader'));
 });
 
 root.render(
   <React.StrictMode>
-    <div className="loader"></div>
+    {/* <div className="loader"></div> */}
     <App className="app" />
   </React.StrictMode>
 );

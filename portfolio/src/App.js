@@ -6,16 +6,17 @@ import Proficiencies from './components/Proficiencies';
 import { Link } from 'react-scroll';
 
 import './App.css';
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 
 function App() {
   const A = ({ target, children }) => <Link activeClass="active" smooth spy to={target}>{children}</Link>;
-  const app = useRef();
+  // const app = useRef();
 
-  useEffect(() => { app.current.style.display = 'block' }, []);
+  // useEffect(() => { app.current.style.display = 'block' }, []);
 
   return (
-    <div className="App" ref={app}>
+    <div className="App">
+       {/* ref={app}> */}
       <nav>
         <A target="about">About</A>
         <A target="proficiencies">Proficiencies</A>
