@@ -34,3 +34,11 @@
 .About-icon-link img {
   width: 4.5rem;
 }
+
+.About-values {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}

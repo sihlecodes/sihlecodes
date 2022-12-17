@@ -27,6 +27,14 @@ function About() {
           learning new skills.
         </p>
 
+        <ul className="About-values">
+          <li>Honesty</li>
+          <li>Innovation</li>
+          <li>Growth</li>
+          <li>Passion</li>
+          <li>Reliability</li>
+        </ul>
+
         <div className="About-icon-links">
           <AboutIconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
           <AboutIconLink src={itchIcon} href="https://sihlecodes.itch.io" label="Itch.io" />
