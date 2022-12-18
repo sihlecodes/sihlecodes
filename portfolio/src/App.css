@@ -10,8 +10,11 @@
   --foreground-colour: rgb(181, 128, 255);
   --dark-colour-values: 40, 42, 48;
 
+  --dark-colour: rgb(var(--dark-colour-values));
+
   --App-section-boundary-size: 3rem;
 
+  --text-hover-transition: color 300ms ease-in-out;
   /* display: none; */
 }
 
@@ -22,7 +25,7 @@
 }
 
 .App-content-area #about {
-  background-color: lightblue;
+  background-color: aliceblue;
 }
 
 .App-content-area :where(#about, #proficiencies) {
@@ -75,11 +78,12 @@
 .App nav a {
   color: #eee;
   text-decoration: none;
-  transition: color 300ms ease-in-out;
+  transition: var(--text-hover-transition);
 }
 
 .App nav a:hover {
   color: lightseagreen;
+  cursor: pointer;
 }
 
 .App nav a.active {

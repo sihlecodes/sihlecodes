@@ -37,7 +37,10 @@ h2 {
 }
 
 .Contact-form-field {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .Contact-form-field :where(label, input) {

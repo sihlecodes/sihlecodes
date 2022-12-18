@@ -42,6 +42,7 @@
 }
 
 .Header-intro-banner h1 {
+  letter-spacing: 0.15rem;
   background-image: -webkit-linear-gradient(left,
       rgba(var(--banner-colour-values), 0.15) 0%,
       rgba(var(--banner-colour-values), 0.25) 20%,

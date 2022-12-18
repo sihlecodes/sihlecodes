@@ -4,6 +4,7 @@ import React, { Fragment } from 'react'
 import itchIcon from '../assets/itch-io.svg';
 import githubIcon from '../assets/github.svg';
 import instagramIcon from '../assets/instagram.svg';
+import Resume from '../assets/CV.pdf';
 
 import './About.css';
 
@@ -34,6 +35,8 @@ function About() {
           <li>Passion</li>
           <li>Reliability</li>
         </ul>
+
+        <a className="About-button" href={itchIcon} download>Download Resume</a>
 
         <div className="About-icon-links">
           <AboutIconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />

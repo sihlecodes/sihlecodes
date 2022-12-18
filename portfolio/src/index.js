@@ -6,7 +6,7 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const hide = (e) => e.style.display = 'none';
+// const hide = (e) => e.style.display = 'none';
 
 window.addEventListener('load', () => {
     // hide(document.querySelector('.loader'));

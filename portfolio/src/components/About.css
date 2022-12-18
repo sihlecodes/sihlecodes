@@ -1,12 +1,29 @@
+.About-button {
+  display: block;
+  padding: 1.2rem 1.5rem;
+  color: white;
+  background-color: var(--dark-colour);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  width: fit-content;
+  margin: 2rem auto;
+  transition: var(--text-hover-transition);
+}
+
+.About-button:hover {
+  color: lightseagreen;
+}
+
 .About-content {
   margin-bottom: var(--App-section-boundary-size);
 }
 
 .About-icon-link {
-  background-color: rgba(var(--dark-colour-values));
+  background-color: var(--dark-colour);
   padding: 0.8rem;
   border-radius: 0.65rem;
-  transition: transform 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 200ms ease-in-out;
 }
 
 .About-icon-link:hover {
@@ -41,4 +58,5 @@
   list-style: none;
   gap: 1rem;
   padding: 0;
+  font-size: medium;
 }
