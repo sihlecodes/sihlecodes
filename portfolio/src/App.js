@@ -8,6 +8,13 @@ import { Link } from 'react-scroll';
 import './App.css';
 // import { useEffect, useRef } from "react";
 
+const Links = {
+  instagram: "https://instagram.com/sihlecodes",
+  whatsapp: "https://wa.me/27633994508",
+  github: "https://github.com/sihlecodes",
+  itch: "https://sihlecodes.itch.io"
+}
+
 function App() {
   const A = ({ target, children }) => <Link activeClass="active" smooth spy to={target}>{children}</Link>;
   // const app = useRef();
@@ -36,4 +43,5 @@ function App() {
   );
 }
 
+export { Links };
 export default App;

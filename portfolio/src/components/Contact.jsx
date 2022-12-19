@@ -1,6 +1,11 @@
 import { Fragment, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+import instagramIcon from '../assets/instagram-contact.svg';
+import whatsappIcon from '../assets/whatsapp-contact.svg';
+
+import { Links } from '../App';
+
 import './Contact.css';
 
 function ContactForm() {
@@ -40,10 +45,17 @@ function ContactForm() {
         <textarea className="Contact-text-input" name="sender_message" required="true"></textarea>
       </div>
 
-        <input className="Contact-submit-button" type="submit" value={buttonText} />
+      <input className="Contact-submit-button" type="submit" value={buttonText} />
     </form>
   );
 }
+
+const ContactIconLink = ({ href, src, alt }) => (
+  <a className="Contact-link" href={href}>
+    <img src={src} alt={alt} />
+  </a>
+);
+
 
 function Contact() {
   return (
@@ -53,6 +65,11 @@ function Contact() {
       <div className="Contact-content">
         <p>Want to get in contact with me? Send me an email.</p>
         <ContactForm />
+
+        <div className="Contact-links">
+          <ContactIconLink href={Links.instagram} src={instagramIcon} />
+          <ContactIconLink href={Links.whatsapp} src={whatsappIcon} />
+        </div>
       </div>
     </Fragment>
   );

@@ -15,6 +15,7 @@
   --App-section-boundary-size: 3rem;
 
   --text-hover-transition: color 300ms ease-in-out;
+  --transfom-hover-transition: transform 200ms ease-in-out;
   /* display: none; */
 }
 
