@@ -6,16 +6,16 @@ import githubIcon from '../assets/github.svg';
 import instagramIcon from '../assets/instagram.svg';
 import Resume from '../assets/CV.pdf';
 
+import { Links } from '../App';
+
 import './About.css';
 
-function AboutIconLink({ href, src, alt, label }) {
-  return (
-    <a className="About-icon-link" href={href}>
-      <img alt={alt} src={src} />
-      <p>{label}</p>
-    </a>
-  );
-}
+const AboutIconLink = ({ href, src, alt, label }) => (
+  <a className="About-icon-link" href={href}>
+    <img alt={alt} src={src} />
+    <p>{label}</p>
+  </a>
+);
 
 function About() {
   return (
@@ -36,12 +36,12 @@ function About() {
           <li>Reliability</li>
         </ul>
 
-        <a className="About-button" href={itchIcon} download>Download Resume</a>
+        <a className="About-button" href={Resume} download="Curriculum Vitae">Download Resume</a>
 
         <div className="About-icon-links">
-          <AboutIconLink src={githubIcon} href="https://github.com/sihlecodes" label="Github" />
-          <AboutIconLink src={itchIcon} href="https://sihlecodes.itch.io" label="Itch.io" />
-          <AboutIconLink src={instagramIcon} href="https://instagram.com/sihlecodes" label="Instagram" />
+          <AboutIconLink src={githubIcon} href={Links.github} label="Github" />
+          <AboutIconLink src={itchIcon} href={Links.itch} label="Itch.io" />
+          <AboutIconLink src={instagramIcon} href={Links.instagram} label="Instagram" />
         </div>
 
         <h3>My Story</h3>
