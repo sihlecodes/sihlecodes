@@ -11,21 +11,31 @@ import './Contact.css';
 function ContactForm() {
   const form = useRef();
 
-  const defaultButtonText = 'Send message';
-  const [buttonText, setButtonText] = useState(defaultButtonText);
+  const text = {
+    default: 'Send message',
+    sending: 'Sending...',
+    sent: 'Email Sent',
+    error: 'Failed to Send'
+  }
+
+  const [buttonText, setButtonText] = useState(text.default);
+  
+  const resetButtonText  = () => setTimeout(() => setButtonText(text.default), 2000);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    setButtonText('Sending...');
-
+    setButtonText(text.sending);
+    
     emailjs.sendForm('sihlecodes.gmail', 'sihlecodes.template', form.current, 'c0ujXFzztdrKXLZx0').then(
       (response) => {
-        setButtonText(defaultButtonText);
+        setButtonText(text.sent);
+        resetButtonText();
       }, (error) => {
-        setButtonText(defaultButtonText);
+        setButtonText(text.error);
+        resetButtonText();
       }
     )
+
   }
 
   return (
@@ -45,7 +55,7 @@ function ContactForm() {
         <textarea className="Contact-text-input" name="sender_message" required="true"></textarea>
       </div>
 
-      <input className="Contact-submit-button" type="submit" value={buttonText} />
+      <input className="App-button" type="submit" value={buttonText} />
     </form>
   );
 }

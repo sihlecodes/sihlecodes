@@ -1,24 +1,3 @@
-.About-button {
-  display: block;
-  padding: 1.2rem 1.5rem;
-  color: white;
-  background-color: var(--dark-colour);
-  text-align: center;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  width: fit-content;
-  margin: 2rem auto;
-  transition: var(--transfom-hover-transition);
-}
-
-.About-button:active {
-  transform: scale(0.9);
-}
-
-.About-button:hover {
-  color: lightseagreen;
-}
-
 .About-content {
   margin-bottom: var(--App-section-boundary-size);
 }

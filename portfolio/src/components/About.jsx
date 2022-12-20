@@ -36,7 +36,7 @@ function About() {
           <li>Reliability</li>
         </ul>
 
-        <a className="About-button" href={Resume} download="Curriculum Vitae">Download Resume</a>
+        <a className="App-button" href={Resume} download="Curriculum Vitae">Download Resume</a>
 
         <div className="About-icon-links">
           <AboutIconLink src={githubIcon} href={Links.github} label="Github" />
