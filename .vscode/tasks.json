@@ -18,7 +18,10 @@
       "group": {
         "_id": "build",
         "isDefault": false
-      }
+      },
+      "presentation": {
+        "close": true,
+      },
     }
   ]
 }

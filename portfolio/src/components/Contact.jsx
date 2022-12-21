@@ -35,7 +35,6 @@ function ContactForm() {
         resetButtonText();
       }
     )
-
   }
 
   return (
