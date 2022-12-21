@@ -17,14 +17,36 @@ function Card({ name, years, src, children }) {
   );
 }
 
+const Framework = ({name}) => (
+  <div className="Framework-card">
+    <div className="picture"></div>
+    <p className="text">{name}</p>
+  </div>
+);
+
 function Proficiencies() {
   return (
     <Fragment>
       <h2>Proficiencies</h2>
 
       <div className="Proficiencies-content ">
+        <h3>Libraries / Frameworks / Engines</h3>
+        
+        <p>These are the frameworks I've used over the years in the order of being introduced to them.</p>
         <div className="App-text-content">
+          <div className="Framework-cards">
+            <Framework name="Kivy" />
+            <Framework name="Qt/QML" />
+            <Framework name="jQuery" />
+            <Framework name="LibGDX" />
+            <Framework name="Swing" />
+            <Framework name="Godot" />
+            <Framework name="React" />
+            <Framework name="React Native" />
+          </div>
+
           <h3>Top 3 Most Used Languages</h3>
+
           <p>Over the years, these are the conventional languages I've used the most during my programming career.</p>
 
         </div>

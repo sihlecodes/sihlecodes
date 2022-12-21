@@ -1,8 +1,27 @@
-.Proficiency-card {
+.Framework-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.Framework-card .picture {
+  width: 100%;
+  height: 150px;
+  background-color: aquamarine;
+}
+
+.Framework-card, .Proficiency-card {
   width: 300px;
   border-radius: 0.3rem;
   overflow: hidden;
 } 
+
+.Framework-card {
+  display: inline-block;
+  width: 200px;
+}
 
 .Proficiency-card .picture {
   width: 100%;
@@ -10,12 +29,17 @@
   background-color: aquamarine;
 }
 
-.Proficiency-card .text {
+:where(.Framework-card, .Proficiency-card) .text {
   background-color: rgb(var(--dark-colour-values));
   color: white;
   padding: 2rem;
   font-size: 1rem;
   text-align: center;
+}
+
+.Framework-card .text {
+  margin: 0;
+  padding: 1rem;
 }
 
 .Proficiency-card .text p b {
