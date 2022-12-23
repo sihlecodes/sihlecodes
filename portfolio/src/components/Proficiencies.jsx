@@ -17,7 +17,7 @@ function LanguageCard({ name, years, src, children }) {
   );
 }
 
-const FrameworkCard = ({name}) => (
+const FrameworkCard = ({ name }) => (
   <div className="Framework-card">
     <div className="picture"></div>
     <p className="text">{name}</p>
@@ -30,25 +30,23 @@ function Proficiencies() {
       <h2>Proficiencies</h2>
 
       <div className="Proficiencies-content ">
-        <h3>Libraries / Frameworks / Engines</h3>
-        
-        <p>These are the frameworks I've used over the years in the order of being introduced to them.</p>
         <div className="App-text-content">
-          <div className="Framework-cards">
-            <FrameworkCard name="Kivy" />
-            <FrameworkCard name="Qt/QML" />
-            <FrameworkCard name="jQuery" />
-            <FrameworkCard name="LibGDX" />
-            <FrameworkCard name="Swing" />
-            <FrameworkCard name="Godot" />
-            <FrameworkCard name="React" />
-            <FrameworkCard name="React Native" />
-          </div>
+          <h3>Libraries / Frameworks / Engines</h3>
+          <p>These are the frameworks I've used over the years in the order of being introduced to them.</p>
+        </div>
 
+        <div className="Framework-cards">
+          <FrameworkCard name="Kivy" />
+          <FrameworkCard name="Qt/QML" />
+          <FrameworkCard name="LibGDX" />
+          <FrameworkCard name="Godot" />
+          <FrameworkCard name="React" />
+          <FrameworkCard name="React Native" />
+        </div>
+
+        <div className="App-text-content">
           <h3>Top 3 Most Used Languages</h3>
-
           <p>Over the years, these are the conventional languages I've used the most during my programming career.</p>
-
         </div>
 
         <div className="Language-cards">
