@@ -19,8 +19,20 @@
 } 
 
 .Framework-card {
-  display: inline-block;
   width: 200px;
+}
+
+.Framework-card .text {
+  margin: 0;
+  padding: 1rem;
+}
+
+.Framework-card .text b {
+  font-size: 1.1rem;
+}
+
+.Framework-card .text .level {
+  font-size: 0.8rem;
 }
 
 .Language-card .picture {
@@ -35,11 +47,6 @@
   padding: 2rem;
   font-size: 1rem;
   text-align: center;
-}
-
-.Framework-card .text {
-  margin: 0;
-  padding: 1rem;
 }
 
 .Language-card .text p b {

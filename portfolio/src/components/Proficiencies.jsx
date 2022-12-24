@@ -17,10 +17,13 @@ function LanguageCard({ name, years, src, children }) {
   );
 }
 
-const FrameworkCard = ({ name }) => (
+const FrameworkCard = ({ name, level }) => (
   <div className="Framework-card">
     <div className="picture"></div>
-    <p className="text">{name}</p>
+    <div className="text">
+      <b>{name}</b>
+      <div className="level">{level}</div>
+    </div>
   </div>
 );
 
@@ -30,20 +33,6 @@ function Proficiencies() {
       <h2>Proficiencies</h2>
 
       <div className="Proficiencies-content ">
-        <div className="App-text-content">
-          <h3>Libraries / Frameworks / Engines</h3>
-          <p>These are the frameworks I've used over the years in the order of being introduced to them.</p>
-        </div>
-
-        <div className="Framework-cards">
-          <FrameworkCard name="Kivy" />
-          <FrameworkCard name="Qt/QML" />
-          <FrameworkCard name="LibGDX" />
-          <FrameworkCard name="Godot" />
-          <FrameworkCard name="React" />
-          <FrameworkCard name="React Native" />
-        </div>
-
         <div className="App-text-content">
           <h3>Top 3 Most Used Languages</h3>
           <p>Over the years, these are the conventional languages I've used the most during my programming career.</p>
@@ -62,8 +51,22 @@ function Proficiencies() {
             Besides using this language in webpages and React native apps, I’ve also used it for scripting along sides the Qt Modeling Language.
           </LanguageCard>
         </div>
-      </div>
 
+        <div className="App-text-content">
+          <h3>Libraries / Frameworks / Engines</h3>
+          <p>These are amoungst the frameworks I've enjoyed the most using. I've used each of these a decent bit of time.</p>
+        </div>
+
+        <div className="Framework-cards">
+          <FrameworkCard name="Kivy" level="Intermidiate" />
+          <FrameworkCard name="Qt/QML" level="Beginner" />
+          <FrameworkCard name="LibGDX" level="Beginner" />
+          <FrameworkCard name="Godot" level="Advanced" />
+          <FrameworkCard name="React" level="Intermidiate" />
+          <FrameworkCard name="React Native" level="Beginner" />
+        </div>
+        
+      </div>
     </Fragment>);
 }
 
