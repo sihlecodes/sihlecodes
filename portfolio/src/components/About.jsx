@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react'
 // import ReadMore from './ReadMore';
 
-import itchIcon from '../assets/itch-io.svg';
-import githubIcon from '../assets/github.svg';
-import instagramIcon from '../assets/instagram.svg';
-import Resume from '../assets/CV.pdf';
+// import itchIcon from '../assets/itch-io.svg';
+// import githubIcon from '../assets/github.svg';
+// import instagramIcon from '../assets/instagram.svg';
+// import Resume from '../assets/CV.pdf';
 
-import { Links } from '../App';
+// import { Links } from '../App';
 
 import './About.css';
 
-const AboutIconLink = ({ href, src, alt, label }) => (
+export const AboutIconLink = ({ href, src, alt, label }) => (
   <a className="About-icon-link" href={href}>
     <img alt={alt} src={src} />
     <p>{label}</p>
@@ -20,29 +20,9 @@ const AboutIconLink = ({ href, src, alt, label }) => (
 function About() {
   return (
     <Fragment>
-      <h2>About</h2>
-
+      {/* <h2>About</h2> */}
       <div className="About-content App-text-content">
-        <p>
-          I am a Self-driven, hardworking, and dependable individual. I enjoy problem solving, programming, and
-          learning new skills.
-        </p>
-
-        <ul className="About-values">
-          <li>Honesty</li>
-          <li>Innovation</li>
-          <li>Growth</li>
-          <li>Passion</li>
-          <li>Reliability</li>
-        </ul>
-
-        <a className="App-button" href={Resume} download="Curriculum Vitae">Download Resume</a>
-
-        <div className="About-icon-links">
-          <AboutIconLink src={githubIcon} href={Links.github} label="Github" />
-          <AboutIconLink src={itchIcon} href={Links.itch} label="Itch.io" />
-          <AboutIconLink src={instagramIcon} href={Links.instagram} label="Instagram" />
-        </div>
+        
 
         <h3>My Story</h3>
         <div>
