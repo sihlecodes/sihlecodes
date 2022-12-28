@@ -41,9 +41,9 @@ function About() {
 
         <h3>My Vision</h3>
 
-        <p>Ultimately, I believe <i>my purpose in life is making people’s lives easier through technological means.</i> Unfortunately, It’s not exactly clear to me, just yet, how I’ll make that work.</p>
+        <p>Ultimately, I believe <i>my purpose in life is making people’s lives easier through technological means.</i> Unfortunately, It’s not exactly clear to me how I’ll make that work, just yet.</p>
 
-        <p>So for now, I want to focus on my studies in University. Along the way also I want to offer my assistance to at least a handful of people and help them realize their own love for programming.</p>
+        <p>So for now, I’m focused more focused on my studies and on sharing some of the knowledge I’ve accumulated, over the years, about programming. </p>
 
 
       </div>
