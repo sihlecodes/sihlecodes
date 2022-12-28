@@ -1,3 +1,12 @@
+.main-layout {
+  display: flex;
+  gap: 2rem
+}
+
+.About-side {
+  width: min-content;
+}
+
 .About-content {
   margin-bottom: var(--App-section-boundary-size);
 }
