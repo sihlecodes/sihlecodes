@@ -44,8 +44,7 @@ function About() {
             <h3>My Vision</h3>
 
             <p>Ultimately, I believe <i>my purpose in life is making people’s lives easier through technological means.</i> Unfortunately, It’s not exactly clear to me how I’ll make that work, just yet.</p>
-
-            <p>So for now, I’m focused more focused on my studies and on sharing some of the knowledge I’ve accumulated, over the years, about programming. </p>
+            <p>So for now, I’m focused more focused on my studies and on sharing some of the knowledge I’ve accumulated, over the years, about programming.</p>
 
             {/* </ReadMore> */}
           </div>
@@ -53,7 +52,7 @@ function About() {
           <div className="About-side">
             <img id="me" width="400" src={me} alt="" />
             <p>
-              I’m passionate programmer and problem solver. I enjoy creating art and learning new skills, amongst other other things.
+              I’m passionate programmer and problem solver. At the moment, I'm really into graphic design. I enjoy creating art, solving problems, and learning new skills, amongst other other things.
             </p>
             <ul className="About-values">
               <li>Honesty</li>

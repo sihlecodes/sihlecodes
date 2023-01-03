@@ -35,7 +35,7 @@ function Proficiencies() {
       <div className="Proficiencies-content ">
         <div className="App-text-content">
           <h3>Top 3 Most Used Languages</h3>
-          <p>Over the years, these are the conventional languages I've used the most during my programming career.</p>
+          <p>Over the years, I've used a lot of programming languages. However, these are the languages I have the most experience using.</p>
         </div>
 
         <div className="Language-cards">
@@ -54,7 +54,7 @@ function Proficiencies() {
 
         <div className="App-text-content">
           <h3>Libraries / Frameworks / Engines</h3>
-          <p>These are amoungst the frameworks I've enjoyed the most using. I've used each of these a decent bit of time.</p>
+          <p>These are amoungst the frameworks I've enjoyed the most using. I create personal app projects and games using them.</p>
         </div>
 
         <div className="Framework-cards">
