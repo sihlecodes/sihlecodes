@@ -3,7 +3,13 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Proficiencies from './components/Proficiencies';
 
+// import { AboutIconLink2 } from "./components/About";
 import { Link } from 'react-scroll';
+
+import itchIcon from './assets/itch-io.svg';
+import githubIcon from './assets/github.svg';
+import instagramIcon from './assets/instagram.svg';
+
 
 import './App.css';
 // import { useEffect, useRef } from "react";
@@ -15,6 +21,12 @@ const Links = {
   itch: "https://sihlecodes.itch.io"
 }
 
+const NavLink = ({ href, src, alt }) => (
+  <a className="App-nav-link" href={href}>
+    <img alt={alt} src={src} />
+  </a>
+);
+
 function App() {
   const A = ({ target, children }) => <Link activeClass="active" smooth spy to={target}>{children}</Link>;
   // const app = useRef();
@@ -23,11 +35,19 @@ function App() {
 
   return (
     <div className="App">
-       {/* ref={app}> */}
+      {/* ref={app}> */}
       <nav>
+        <span><b>sihle</b>.codes</span>
+
         <A target="about">About</A>
         <A target="proficiencies">Proficiencies</A>
         <A target="contact">Contact</A>
+
+        <div className="App-nav-icons">
+          <NavLink src={githubIcon} href={Links.github} />
+          <NavLink src={itchIcon} href={Links.itch} />
+          <NavLink src={instagramIcon} href={Links.instagram} />
+        </div>
       </nav>
       <Header />
 

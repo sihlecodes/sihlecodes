@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
 // import ReadMore from './ReadMore';
 
-import itchIcon from '../assets/itch-io.svg';
-import githubIcon from '../assets/github.svg';
-import instagramIcon from '../assets/instagram.svg';
+// import itchIcon from '../assets/itch-io.svg';
+// import githubIcon from '../assets/github.svg';
+// import instagramIcon from '../assets/instagram.svg';
 import resume from '../assets/CV.pdf';
 
-import { Links } from '../App';
+// import { Links } from '../App';
 import me from '../assets/candidate1.png';
 
 import './About.css';
@@ -20,12 +20,12 @@ export const AboutIconLink = ({ href, src, alt, label }) => (
 
 function About() {
   return (
-    <Fragment>
+    <div className="About">
       {/* <h2>About</h2> */}
-      <div className="About-content App-text-content">
+      <div className="About-content">
 
 
-        <div className="main-layout">
+        <div className="About-main">
           <div className="story">
             <h3>My Story</h3>
             <div>
@@ -52,7 +52,7 @@ function About() {
           <div className="About-side">
             <img id="me" width="400" src={me} alt="" />
             <p>
-              I’m passionate programmer and problem solver. At the moment, I'm really into graphic design. I enjoy creating art, solving problems, and learning new skills, amongst other other things.
+              I’m passionate programmer and problem solver. At the moment, I'm really into graphic design. I enjoy creating art, solving problems, and learning new skills, amongst other things.
             </p>
             <ul className="About-values">
               <li>Honesty</li>
@@ -67,7 +67,7 @@ function About() {
         </div>
 
       </div>
-    </Fragment>
+    </div>
   )
 }
 

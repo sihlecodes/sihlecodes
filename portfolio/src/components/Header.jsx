@@ -1,14 +1,13 @@
 import './Header.css';
 
-import itchIcon from '../assets/itch-io.svg';
-import githubIcon from '../assets/github.svg';
-import instagramIcon from '../assets/instagram.svg';
-import resume from '../assets/CV.pdf';
+// import itchIcon from '../assets/itch-io.svg';
+// import githubIcon from '../assets/github.svg';
+// import instagramIcon from '../assets/instagram.svg';
+// import resume from '../assets/CV.pdf';
+// import me from '../assets/me-optimized.png';
 
-import me from '../assets/me-optimized.png';
-
-import { Links } from '../App';
-import { AboutIconLink } from "./About";
+// import { Links } from '../App';
+// import { AboutIconLink } from "./About";
 
 function getYearsOfExperience() {
   const STARTING_YEAR = 2015
@@ -30,11 +29,11 @@ function Header() {
         </div>
       </div>
 
-      <div className="About-icon-links">
+      {/* <div className="About-icon-links">
         <AboutIconLink src={githubIcon} href={Links.github} label="Github" />
         <AboutIconLink src={itchIcon} href={Links.itch} label="Itch.io" />
         <AboutIconLink src={instagramIcon} href={Links.instagram} label="Instagram" />
-      </div>
+      </div> */}
     </header>
   );
 }
