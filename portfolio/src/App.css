@@ -118,14 +118,19 @@
 
 .App-nav-links {
   display: flex;
+  flex: 1;
 }
 
 .App-nav-icons {
   display: flex;
-  /* flex: 1; */
   border-left: 1px solid white;
   padding-left: 1rem;
   gap: 1rem;
+  /* background-color: yellow; */
+}
+
+.App-nav-link {
+  /* background-color: red; */
 }
 
 .App-nav-link :where(img, p) {

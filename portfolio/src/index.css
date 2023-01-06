@@ -5,10 +5,6 @@ body {
   color: var(--font-content-colour);
 }
 
-* {
-
-}
-
 h2 {
   text-align: center;
   margin-top: 2rem;

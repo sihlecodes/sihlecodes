@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import instagramIcon from '../assets/instagram-contact.svg';
@@ -68,7 +68,7 @@ const ContactIconLink = ({ href, src, alt }) => (
 
 function Contact() {
   return (
-    <Fragment>
+    <div>
       <h2>Get In Touch</h2>
 
       <div className="Contact-content">
@@ -80,7 +80,7 @@ function Contact() {
           <ContactIconLink href={Links.whatsapp} src={whatsappIcon} />
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }
 

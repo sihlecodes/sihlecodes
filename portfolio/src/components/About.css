@@ -43,7 +43,16 @@
   width: 4.5rem;
 }
 
-.About-values {
+.About-side img {
+  background-color: aquamarine;
+  border-radius: 0.8rem;
+}
+
+.About-side p {
+  text-align: justify;
+}
+
+.About-side ul {
   display: flex;
   justify-content: center;
   list-style: none;
