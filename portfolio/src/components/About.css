@@ -3,10 +3,6 @@
   gap: 2rem
 }
 
-.About-side {
-  width: min-content;
-}
-
 .About-content {
   margin-bottom: var(--App-section-boundary-size);
 }
@@ -49,7 +45,7 @@
 }
 
 .About-side p {
-  text-align: justify;
+  text-align: center;
 }
 
 .About-side ul {

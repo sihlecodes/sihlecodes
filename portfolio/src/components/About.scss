@@ -1,0 +1,63 @@
+.About-main {
+  display: flex;
+  gap: 2rem
+}
+
+.About-content {
+  margin-bottom: var(--App-section-boundary-size);
+}
+
+.About-icon-link {
+  & p {
+    text-decoration: none;
+    transition: transform 200ms ease-in-out;
+  }
+
+  p {
+    color: var(--font-content-colour);
+    font-family: sans-serif;
+    margin: 0;
+    font-size: small;
+  }
+}
+
+.About-icon-link {
+  img {
+    width: 4.5rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.About-icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.About-side {
+  img {
+    background-color: aquamarine;
+    border-radius: 0.8rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    font-size: medium;
+  }
+}

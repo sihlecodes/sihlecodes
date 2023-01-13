@@ -3,7 +3,7 @@ import React from 'react'
 import resume from '../assets/CV.pdf';
 import me from '../assets/candidate1.png';
 
-import './About.css';
+import './About.scss';
 
 export const AboutIconLink = ({ href, src, alt, label }) => (
   <a className="About-icon-link" href={href}>
