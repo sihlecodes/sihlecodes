@@ -11,7 +11,7 @@ import githubIcon from './assets/github.svg';
 import instagramIcon from './assets/instagram.svg';
 
 
-import './App.css';
+import './App.scss';
 // import { useEffect, useRef } from "react";
 
 const Links = {
