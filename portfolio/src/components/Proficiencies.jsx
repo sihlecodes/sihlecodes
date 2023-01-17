@@ -3,7 +3,8 @@ import { Fragment } from 'react';
 import python from '../assets/python.svg';
 import java from '../assets/java.svg';
 import javaScript from '../assets/javascript.svg';
-import './Proficiencies.css';
+
+import './Proficiencies.scss';
 
 function LanguageCard({ name, years, src, children }) {
   return (

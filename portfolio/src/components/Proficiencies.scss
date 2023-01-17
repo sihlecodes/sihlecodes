@@ -1,0 +1,53 @@
+.Proficiencies-content {
+  margin-bottom: var(--App-section-boundary-size);
+}
+
+.Framework-cards,
+.Language-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.Framework-card,
+.Language-card {
+  width: 300px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+
+  .text {
+    background-color: rgb(var(--dark-colour-values));
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: center;
+
+    b {
+      font-family: 'Raleway', sans-serif;
+    }
+  }
+}
+
+.Framework-card {
+  width: 200px;
+
+  .picture {
+    height: 150px;
+    background-color: aquamarine;
+  }
+
+  .text {
+    padding: 1rem;
+
+    .level {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.Language-card .picture {
+  height: 250px;
+  background-color: aquamarine;
+}
