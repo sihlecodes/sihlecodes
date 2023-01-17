@@ -6,7 +6,7 @@ import whatsappIcon from '../assets/whatsapp-contact.svg';
 
 import { Links } from '../App';
 
-import './Contact.css';
+import './Contact.scss';
 
 function ContactForm() {
   const form = useRef();
