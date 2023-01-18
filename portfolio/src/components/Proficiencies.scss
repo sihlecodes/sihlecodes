@@ -1,3 +1,5 @@
+@import '../partials/variables';
+
 .Proficiencies-content {
   margin-bottom: var(--App-section-boundary-size);
 }
@@ -18,8 +20,8 @@
   overflow: hidden;
 
   .text {
-    background-color: rgb(var(--dark-colour-values));
-    color: white;
+    background-color: $darkColour;
+    color: $fontCardColour;
     padding: 2rem;
     font-size: 1rem;
     text-align: center;
@@ -35,7 +37,7 @@
 
   .picture {
     height: 150px;
-    background-color: aquamarine;
+    background-color: $accentColour;
   }
 
   .text {
@@ -49,5 +51,5 @@
 
 .Language-card .picture {
   height: 250px;
-  background-color: aquamarine;
+  background-color: $accentColour;
 }

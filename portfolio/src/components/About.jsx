@@ -16,8 +16,8 @@ function About() {
   return (
     <div className="About-content App-text-content">
       <div className="About-main">
-        <div className="story">
-          <h3>My Story</h3>
+        <div className="text-content">
+          <h2>My Story</h2>
           <div>
             <p>Ever since I was young I always new I wanted to do something related to technology; I found tech fascinating.</p>
 
@@ -31,7 +31,7 @@ function About() {
             </p>
           </div>
 
-          <h3>My Vision</h3>
+          <h2>My Vision</h2>
 
           <p>Ultimately, I believe <i>my purpose in life is making people’s lives easier through technological means.</i> Unfortunately, It’s not exactly clear to me how I’ll make that work, just yet.</p>
           <p>So for now, I’m focused more focused on my studies and on sharing some of the knowledge I’ve accumulated, over the years, about programming.</p>

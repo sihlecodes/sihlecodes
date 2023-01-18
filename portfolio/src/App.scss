@@ -1,22 +1,15 @@
+@import 'partials/variables';
+
 .App {
   text-align: center;
-
-  --font-content-colour: rgb(30, 34, 38);
-  --font-heading-colour: rgb(36, 38, 44);
-
-  --foreground-colour: rgb(181, 128, 255);
-  --dark-colour-values: 40, 42, 48;
-
-  --dark-colour: rgb(var(--dark-colour-values));
-
+  
   --App-section-boundary-size: 3rem;
 
   --text-hover-transition: color 300ms ease-in-out;
   --transfom-hover-transition: transform 200ms ease-in-out;
 
-  & :where(h1, h2, h3) {
+  h1, h2, h3 {
     text-align: center;
-    color: var(--font-heading-colour);
     font-family: 'Raleway', sans-serif;
   }
 
@@ -30,7 +23,7 @@
     top: 0;
     width: 100%;
     padding: 0.8rem 1.5rem;
-    background-color: rgb(var(--dark-colour-values));
+    background-color: $darkColour;
     z-index: 10;
     color: white;
 
@@ -40,7 +33,7 @@
       transition: var(--text-hover-transition);
 
       &:hover {
-        color: lightseagreen;
+        color: $fontHoverColour;
         cursor: pointer;
       }
 
@@ -57,11 +50,11 @@
 }
 
 .App-content-area {
-  & #about {
+  #about {
     background-color: aliceblue;
   }
 
-  & :where(#about, #proficiencies) {
+  #about, #proficiencies {
     padding: 2rem 0;
   }
 }
@@ -79,7 +72,7 @@
   display: block;
   padding: 1.2rem 1.5rem;
   color: white;
-  background-color: var(--dark-colour);
+  background-color: $darkColour;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -94,7 +87,7 @@
   }
 
   &:hover {
-    color: lightseagreen;
+    color: $fontHoverColour;
   }
 }
 
@@ -103,7 +96,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: $accentColour;
   padding: 2rem;
   height: 100vh;
 }

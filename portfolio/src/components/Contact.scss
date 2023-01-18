@@ -1,3 +1,5 @@
+@import '../partials/variables';
+
 h2 {
   margin-top: 0;
 }
@@ -43,7 +45,7 @@ h2 {
 }
 
 .Contact-required-field {
-  color: red;
+  color: $fontRequiredColour;
   font-size: 0.85rem;
 }
 
@@ -52,7 +54,7 @@ h2 {
   border-radius: 0.2rem;
   margin: auto;
   outline: none;
-  border: 2px var(--dark-colour) solid;
+  border: 2px $darkColour solid;
   width: calc(100% - 20px - 0.4rem);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1rem;

@@ -1,6 +1,14 @@
+@import '../partials/variables';
+
 .About-main {
   display: flex;
-  gap: 2rem
+  gap: 2rem;
+  justify-content: center;
+
+  .text-content {
+    flex: 1;
+    min-width: max(40vw, 400px);
+  }
 }
 
 .About-content {
@@ -8,13 +16,10 @@
 }
 
 .About-icon-link {
-  & p {
+  p {
     text-decoration: none;
     transition: transform 200ms ease-in-out;
-  }
-
-  p {
-    color: var(--font-content-colour);
+    color: $fontContentColour;
     font-family: sans-serif;
     margin: 0;
     font-size: small;
@@ -41,8 +46,11 @@
 }
 
 .About-side {
+  min-width: min-content;
+  flex: 1;
+
   img {
-    background-color: aquamarine;
+    background-color: $accentColour;
     border-radius: 0.8rem;
   }
 
