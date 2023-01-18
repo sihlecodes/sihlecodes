@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 
 function getYearsOfExperience() {
   const STARTING_YEAR = 2015
