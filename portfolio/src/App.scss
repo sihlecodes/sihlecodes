@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  
+
   --App-section-boundary-size: 3rem;
 
   --text-hover-transition: color 300ms ease-in-out;
@@ -14,18 +14,35 @@
   }
 
   nav {
+    $sidePadding: 1.5rem;
+    $gapSize: 0.8rem;
+
+    color: white;
     display: flex;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
     position: fixed;
+    text-transform: uppercase;
+    align-items: center;
     top: 0;
-    width: 100%;
+    width: calc(100% - 3rem);
     padding: 0.8rem 1.5rem;
     background-color: $darkColour;
+    gap: $gapSize;
     z-index: 10;
-    color: white;
+
+    .App-nav-links {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      text-align: end;
+      gap: $gapSize;
+    }
+
+    .App-nav-icons {
+      // background-color: red;
+      img {
+        width: 24px;
+      }
+    }
 
     a {
       color: #eee;
@@ -40,11 +57,6 @@
       &.active {
         font-weight: bold;
       }
-    }
-
-    span {
-      flex: 1;
-      text-align: left;
     }
   }
 }
@@ -109,24 +121,4 @@
 .App-text-content {
   padding: 0 20vw;
   text-align: left;
-}
-
-.App-nav {
-  &-icons {
-    display: flex;
-    border-left: 1px solid white;
-    padding-left: 1rem;
-    gap: 1rem;
-  }
-
-  &-links {
-    display: flex;
-    flex: 1;
-  }
-
-  &-link :where(img, p) {
-    width: 24px;
-    padding: 0;
-    margin: 0;
-  }
 }

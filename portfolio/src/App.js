@@ -22,7 +22,7 @@ const Links = {
 }
 
 const NavLink = ({ href, src, alt }) => (
-  <a className="App-nav-link" href={href}>
+  <a className="App-nav-icon" href={href}>
     <img alt={alt} src={src} />
   </a>
 );
@@ -39,14 +39,16 @@ function App() {
       <nav>
         <span><b>sihle</b>.codes</span>
 
-        <A target="about">About</A>
-        <A target="proficiencies">Proficiencies</A>
-        <A target="contact">Contact</A>
-
-        <div className="App-nav-icons">
-          <NavLink src={githubIcon} href={Links.github} />
-          <NavLink src={itchIcon} href={Links.itch} />
-          <NavLink src={instagramIcon} href={Links.instagram} />
+        <div className="App-nav-links">
+          <A target="about">About</A>
+          <A target="proficiencies">Proficiencies</A>
+          <A target="contact">Contact</A>
+          
+          <div className="App-nav-icons">
+            <NavLink src={githubIcon} href={Links.github} />
+            <NavLink src={itchIcon} href={Links.itch} />
+            <NavLink src={instagramIcon} href={Links.instagram} />
+          </div>
         </div>
       </nav>
       <Header />
