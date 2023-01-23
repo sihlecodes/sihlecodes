@@ -7,19 +7,17 @@ function getYearsOfExperience() {
 
 function Header() {
   return (
-    <header className="Header">
-      <div className="Header-content">
-        <div className="Header-experience-badge" >
-          <div className="Header-experience-years App-big-text App-big-font">{getYearsOfExperience()}+</div>
-          <div className="App-medium-text">years</div>of coding
-        </div>
-
-        <div className="Header-intro-banner">
-          <p>Hi I'm</p>
-          <h1 className="App-big-font">Siphesihle Mhlongo</h1>
-        </div>
+    <div className="Header">
+      <div className="experience-badge" >
+        <div className="years">{getYearsOfExperience()}+</div>
+        <span>years</span>of coding
       </div>
-    </header>
+
+      <div className="banner">
+        <p>Hi I'm</p>
+        <h1>Siphesihle Mhlongo</h1>
+      </div>
+    </div>
   );
 }
 

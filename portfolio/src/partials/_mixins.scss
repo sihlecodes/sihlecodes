@@ -4,7 +4,21 @@
   align-items: center;
 }
 
-@mixin App-button {
+@mixin big-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+@mixin big-text {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+@mixin medium-text {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+@mixin button {
   display: block;
   padding: 1.2rem 1.5rem;
   color: white;

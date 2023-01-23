@@ -1,4 +1,5 @@
 @import '../partials/variables';
+@import '../partials/mixins';
 
 .Header {
   display: flex;
@@ -9,49 +10,52 @@
   height: 100vh;
   font-size: calc(10px + 1vmin);
   color: white;
-}
 
-.Header-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
+  .banner {
+    text-align: center;
+    top: calc(50% - (1.2rem * 2 + 1.7rem + 0.5rem + 1.1rem)/2);
+    position: sticky;
+    
+    h1 {
+      @include big-font;
 
-.Header-experience-badge {
-  position: absolute;
-  text-transform: uppercase;
-  top: 4.5rem;
-  left: 2rem
-}
-
-.Header-experience-years {
-  margin: 0;
-  line-height: 1;
-}
-
-.Header-intro-banner {
-  flex: 1;
-  position: sticky;
-  top: calc(50% - (1.2rem * 2 + 1.7rem + 0.5rem + 1.1rem)/2);
-
-  h1 {
-    letter-spacing: 0.15rem;
-    background-image: -webkit-linear-gradient(left,
-        rgba($darkColour, 0.15) 0%,
-        rgba($darkColour, 0.35) 20%,
-        rgba($darkColour, 1.00) 50%,
-        rgba($darkColour, 0.35) 80%,
-        rgba($darkColour, 0.15) 100%);
-
-    margin: 0;
-    padding: 1.2rem;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    color: white;
+      letter-spacing: 0.15rem;
+      background-image: -webkit-linear-gradient(left,
+      rgba($darkColour, 0.15) 0%,
+      rgba($darkColour, 0.35) 20%,
+      rgba($darkColour, 1.00) 50%,
+      rgba($darkColour, 0.35) 80%,
+      rgba($darkColour, 0.15) 100%);
+      
+      margin: 0;
+      padding: 1.2rem;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: white;
+    }
+    
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
   }
 
-  p {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+  .experience-badge {
+    position: absolute;
+    text-transform: uppercase;
+    top: 4.5rem;
+    left: 2rem;
+  
+    span {
+      @include medium-text;
+    }
+  
+    .years {
+      @include big-text;
+      @include big-font;
+  
+      margin: 0;
+      line-height: 1;
+    }
   }
 }

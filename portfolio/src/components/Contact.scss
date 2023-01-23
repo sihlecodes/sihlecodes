@@ -63,7 +63,7 @@ h2 {
     }
 
     .submit {
-      @include App-button;
+      @include button;
       width: min-content;
     }
   }
