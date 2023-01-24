@@ -1,67 +1,49 @@
 @import 'partials/variables';
 
 .App {
+  $gapSize: 0.8rem;
   text-align: center;
-
-  --App-section-boundary-size: 3rem;
-
-  --text-hover-transition: color 300ms ease-in-out;
-  --transfom-hover-transition: transform 200ms ease-in-out;
-
+  
   h1, h2, h3 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
   }
 
   nav {
-    $sidePadding: 1.5rem;
-    $gapSize: 0.8rem;
+    $padding: ("vertical": 0.8rem, "horizontal": 1.5rem);
 
-    color: white;
-    display: flex;
-    position: fixed;
     text-transform: uppercase;
-    align-items: center;
-    top: 0;
-    width: calc(100% - 3rem);
-    padding: 0.8rem 1.5rem;
     background-color: $darkColour;
-    gap: $gapSize;
+    display: flex;
+    position: sticky;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: map-get($padding, "vertical") map-get($padding, "horizontal");
+    // padding-right: map-get($padding, "horizontal") * 2;
+    // width: calc(100% - map-get($padding, "horizontal") * 2);
+    top: 0;
     z-index: 10;
 
     .App-nav-links {
+      margin: 0;
       display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      text-align: end;
       gap: $gapSize;
-    }
-
-    .App-nav-icons {
-      // background-color: red;
-      img {
-        width: 24px;
-      }
-    }
-
-    a {
-      color: #eee;
-      text-decoration: none;
-      transition: var(--text-hover-transition);
-
-      &:hover {
-        color: $fontHoverColour;
-        cursor: pointer;
-      }
-
-      &.active {
-        font-weight: bold;
-      }
+      align-items: center;
+      list-style: none;
     }
   }
-}
 
-.App-content-area {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $accentColour;
+    padding: 2rem;
+    height: 100vh;
+  }
+
   #about {
     background-color: aliceblue;
   }
@@ -71,54 +53,11 @@
   }
 }
 
-.App-big-font {
-  font-family: 'Raleway', sans-serif;
-}
+.App-nav-icon {
+  margin: 0;
+  padding: 0;
 
-.App-big-text {
-  font-size: 6rem;
-  font-weight: 900;
-}
-
-.App-button {
-  display: block;
-  padding: 1.2rem 1.5rem;
-  color: white;
-  background-color: $darkColour;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: 'Roboto Condensed', sans-serif;
-  border-radius: 0.4rem;
-  width: fit-content;
-  margin: 2rem auto;
-  transition: all 200ms ease-in-out;
-
-  &:active {
-    transform: scale(0.9);
+  img {
+    width: 24px;
   }
-
-  &:hover {
-    color: $fontHoverColour;
-  }
-}
-
-.App-contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $accentColour;
-  padding: 2rem;
-  height: 100vh;
-}
-
-.App-medium-text {
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-
-.App-text-content {
-  padding: 0 20vw;
-  text-align: left;
 }

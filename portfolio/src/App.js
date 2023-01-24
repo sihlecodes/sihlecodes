@@ -1,9 +1,8 @@
 import About from './components/About';
 import Contact from './components/Contact';
-import Header from './components/Header';
+import Cover from './components/Cover';
 import Proficiencies from './components/Proficiencies';
 
-// import { AboutIconLink2 } from "./components/About";
 import { Link } from 'react-scroll';
 
 import itchIcon from './assets/itch-io.svg';
@@ -12,13 +11,12 @@ import instagramIcon from './assets/instagram.svg';
 
 
 import './App.scss';
-// import { useEffect, useRef } from "react";
 
 const Links = {
   instagram: "https://instagram.com/sihlecodes",
   whatsapp: "https://wa.me/27633994508",
   github: "https://github.com/sihlecodes",
-  itch: "https://sihlecodes.itch.io"
+  itch: "https://sihlecodes.itch.'io"
 }
 
 const NavLink = ({ href, src, alt }) => (
@@ -28,37 +26,41 @@ const NavLink = ({ href, src, alt }) => (
 );
 
 function App() {
-  const A = ({ target, children }) => <Link activeClass="active" smooth spy to={target}>{children}</Link>;
-  // const app = useRef();
-
-  // useEffect(() => { app.current.style.display = 'block' }, []);
-
+  const A = ({ target, children }) => <li><Link activeClass="active" smooth spy to={target}>{children}</Link></li>;
+  
   return (
     <div className="App">
-      {/* ref={app}> */}
-      <nav>
-        <span><b>sihle</b>.codes</span>
+      {/* <header> */}
+        <nav>
+          <span><b>sihle</b>.codes</span>
 
-        <div className="App-nav-links">
-          <A target="about">About</A>
-          <A target="proficiencies">Proficiencies</A>
-          <A target="contact">Contact</A>
-          
-          <div className="App-nav-icons">
-            <NavLink src={githubIcon} href={Links.github} />
-            <NavLink src={itchIcon} href={Links.itch} />
-            <NavLink src={instagramIcon} href={Links.instagram} />
-          </div>
-        </div>
-      </nav>
-      <Header />
+          <ul className="App-nav-links">
+            <A target="about">About</A>
+            <A target="proficiencies">Proficiencies</A>
+            <A target="contact">Contact</A>
 
-      <div className="App-content-area">
-        <section id="about"><About /></section>
-        <section id="proficiencies"><Proficiencies /></section>
+            <div className="App-nav-icons">
+              <NavLink src={githubIcon} href={Links.github} />
+              <NavLink src={itchIcon} href={Links.itch} />
+              <NavLink src={instagramIcon} href={Links.instagram} />
+            </div>
+          </ul>
+        </nav>
+      {/* </header> */}
+
+      <Cover />
+
+      <div className="content-area">
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="proficiencies">
+          <Proficiencies />
+        </section>
       </div>
 
-      <section id="contact" className='App-contact-section'>
+      <section id="contact">
         <Contact />
       </section>
     </div>

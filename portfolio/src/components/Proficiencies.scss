@@ -1,20 +1,24 @@
 @import '../partials/variables';
+@import '../partials/mixins';
 
-.Proficiencies-content {
+.Proficiencies {
   margin-bottom: var(--App-section-boundary-size);
+
+  .frameworks,
+  .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .text-content {
+    @include text-content;
+  }
 }
 
-.Framework-cards,
-.Language-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 1.5rem;
-}
-
-.Framework-card,
-.Language-card {
+@mixin card {
   width: 300px;
   border-radius: 0.3rem;
   overflow: hidden;
@@ -27,12 +31,13 @@
     text-align: center;
 
     b {
-      font-family: 'Raleway', sans-serif;
+      @include big-font;
     }
   }
 }
 
 .Framework-card {
+  @include card;
   width: 200px;
 
   .picture {
@@ -49,7 +54,11 @@
   }
 }
 
-.Language-card .picture {
-  height: 250px;
-  background-color: $accentColour;
+.Language-card {
+  @include card;
+  
+  .picture {
+    height: 250px;
+    background-color: $accentColour;
+  }
 }

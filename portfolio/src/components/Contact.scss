@@ -24,47 +24,4 @@ h2 {
     justify-content: center;
     margin: 1rem;
   }
-
-  .form {
-    width: min(450px, 50vw);
-    margin: auto;
-  
-    .field {
-      margin-bottom: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-
-      .required-indicator {
-        color: $fontRequiredColour;
-        font-size: 0.85rem;
-      }
-    }
-
-    .text-input {
-      padding: 8px 10px;
-      border-radius: 0.2rem;
-      margin: auto;
-      outline: none;
-      border: 2px $darkColour solid;
-      width: calc(100% - 20px - 0.4rem);
-      font-family: 'Roboto Condensed', sans-serif;
-      font-size: 1rem;
-    
-      &:autofill {
-        box-shadow: 0 0 0px 1000px white inset;
-        transition: background-color 5000s ease-in-out 0s;
-      }
-    }
-    
-    textarea {
-      resize: unset;
-      height: 100px;
-    }
-
-    .submit {
-      @include button;
-      width: min-content;
-    }
-  }
 }
