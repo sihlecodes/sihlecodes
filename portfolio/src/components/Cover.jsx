@@ -1,13 +1,13 @@
-import './Header.scss';
+import './Cover.scss';
 
 function getYearsOfExperience() {
   const STARTING_YEAR = 2015
   return new Date().getFullYear() - (STARTING_YEAR + 1);
 }
 
-function Header() {
+function Cover() {
   return (
-    <div className="Header">
+    <div className="Cover">
       <div className="experience-badge" >
         <div className="years">{getYearsOfExperience()}+</div>
         <span>years</span>of coding
@@ -21,4 +21,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Cover;
