@@ -1,9 +1,11 @@
-# Software/Game Developer
+### Sihlecodes
 
-Hi, I’m a Siphesihle Mhlongo a self-taught programmer from South Africa. I make productivity tools, games and themes.
+Hi, I’m a Siphesihle! I make games, and personal productivity tools.
 
-Checkout out some of my game projects over at [itch.io](https://ghostrix98.itch.io).
-<br>Contact: sihlecodes@gmail.com.
+#### Fun facts
+* Currently doing my degree in Computer Science and Maths.
+* When I'm not coding, you'll likely find me tinkering with electronics.
+* I'm also an artist. (I haven't drawn in years though :sweat_smile:)
 
 <!---
 sihlecodes/sihlecodes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
